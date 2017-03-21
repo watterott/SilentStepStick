@@ -1,7 +1,7 @@
 // ****************** Start COM-Port ********************************
 
 var serialPort = scriptThread.createSerialPort();
-var baudrate = 115200; //115200 9600
+var baudrate = 115200; //115200 57600 9600
 var anticollisionTime = 3*80*1000/baudrate;
 var receivedData = Array();
 var packetsSend = 0, packetsReceived = 0;
@@ -18,7 +18,7 @@ function connectButtonClicked()
 {
 	if(UI_Connect_pushButton.text() == "Connect")
 	{
-		var x= UI_COMPORT_comboBox.currentText();
+		var x = UI_COMPORT_comboBox.currentText();
 		
 		serialPort.setPortName(UI_COMPORT_comboBox.currentText());
 		if (serialPort.open())
@@ -43,13 +43,14 @@ function connectButtonClicked()
 		}
 		else
 		{
-			scriptThread.messageBox("Critical", 'Error', 'Could not open serial port!');
+			scriptThread.messageBox("Critical", 'Error', 'Could not open serial port.');
 		}
 	}
 	
 	// disconnect or error on connection
 	UI_DRV_STATUS_polling_checkBox.setChecked(false);
 	DRV_STATUS_Timer.stop();
+	TSTEP_Timer.stop();
 	serialPort.close();
 	UI_Connect_pushButton.setText("Connect");
 	UI_tabWidget.setEnabled(false);
@@ -86,6 +87,7 @@ function dialogFinished(e) //The dialog is closed.
 	if(UI_Connect_pushButton.text() == "Disconnect")
 	{
 		DRV_STATUS_Timer.stop();
+		TSTEP_Timer.stop();
 		serialPort.close();
 	}
 	scriptThread.stopScript()
@@ -257,7 +259,7 @@ function dataReceivedSlot()
 						showSendReceivedPackets();
 					}
 					else
-						scriptThread.messageBox("Critical", "Error", "Wrong CRC");
+						scriptThread.messageBox("Critical", "Error", "Wrong CRC received.");
 				}
 				else
 					return;  // skip decoding, not enougth data received			
