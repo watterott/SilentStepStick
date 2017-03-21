@@ -4,7 +4,7 @@ The driver boards are hardware compatible with [StepStick](http://reprap.org/wik
 
 SilentStepStick          | TMC2100 (5V)        | TMC2100 (3-5V)      | TMC2130 (3-5V)      | TMC2208 (3-5V)
 ------------------------ | ------------------- | ------------------- | ------------------- | -------------------
-                         | [![SSS](https://github.com/watterott/SilentStepStick/raw/master/hardware/SilentStepStick-TMC2100_v12_5V.jpg)](http://www.watterott.com/en/SilentStepStick-TMC2100-5V) | [![SSS](https://github.com/watterott/SilentStepStick/raw/master/hardware/SilentStepStick-TMC2100_v12.jpg)](http://www.watterott.com/en/SilentStepStick) | [![SSS](https://github.com/watterott/SilentStepStick/raw/master/hardware/SilentStepStick-TMC2130_v10.jpg)](http://www.watterott.com/en/SilentStepStick-TMC2130) | [![SSS](https://github.com/watterott/SilentStepStick/raw/master/hardware/SilentStepStick-TMC2208_v10.jpg)](http://www.watterott.com/en/SilentStepStick-TMC2208)
+-                        | [![SSS](https://github.com/watterott/SilentStepStick/raw/master/hardware/SilentStepStick-TMC2100_v12_5V.jpg)](http://www.watterott.com/en/SilentStepStick-TMC2100-5V) | [![SSS](https://github.com/watterott/SilentStepStick/raw/master/hardware/SilentStepStick-TMC2100_v12.jpg)](http://www.watterott.com/en/SilentStepStick) | [![SSS](https://github.com/watterott/SilentStepStick/raw/master/hardware/SilentStepStick-TMC2130_v10.jpg)](http://www.watterott.com/en/SilentStepStick-TMC2130) | [![SSS](https://github.com/watterott/SilentStepStick/raw/master/hardware/SilentStepStick-TMC2208_v10.jpg)](http://www.watterott.com/en/SilentStepStick-TMC2208)
 Interface                | Step/Dir            | Step/Dir            | Step/Dir or [SPI](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus) | Step/Dir
 Configuration            | CFG Pins            | CFG Pins            | CFG Pins or [SPI](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus) | CFG Pins or [UART](https://en.wikipedia.org/wiki/UART)
 Native Microsteps*       | up to 1/16          | up to 1/16          | up to 1/256         | up to 1/256
@@ -48,6 +48,7 @@ _* without interpolation (microPlyer), ** further infos [here](https://github.co
 * Trinamic stepper motor driver (chopper drive / constant current drive)
 * Step/Dir interface with up to 256 microsteps and interpolation
 * Motor current: up to **1.2A RMS** continuously (active cooling required)
+* Automatic standby current reduction
 * **microPlyer** - microstep interpolator for increased smoothness of microstepping
 * **stealthChop** - for quiet operation and smooth motion
 * **spreadCycle** - highly dynamic motor control chopper
@@ -57,12 +58,12 @@ _* without interpolation (microPlyer), ** further infos [here](https://github.co
   * **coolStep** - current control for energy savings
   * **stallGuard2** - sensorless motor load detection
   * **dcStep** - load dependent speed control
-  * automatic stealthChop and spreadCycle switchover depending on velocity
+  * Automatic stealthChop and spreadCycle switchover depending on velocity
 * Extra features of **TMC2208**:
   * UART configuration interface (9600...500k Baud)
   * up to 256 native microsteps (without interpolation)
   * **stealthChop2** - improved stealthChop for quiet operation and smooth motion
-  * automatic stealthChop and spreadCycle switchover depending on velocity
+  * Automatic stealthChop and spreadCycle switchover depending on velocity
 
 
 ## Hardware and Software
