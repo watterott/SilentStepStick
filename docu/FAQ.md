@@ -44,6 +44,8 @@ For most cases the **1/16 stealthChop** mode (TMC2100: CFG1=open, CFG2=open, CFG
 If you have problems like step losses then you can use a higher current setting in stealthChop with automatic power-down (open/unconnected EN pin)
 or you can use the more powerful **1/16 spreadCycle** mode (TMC2100: CFG1=GND, CFG2=open, CFG3=open).
 
+A configuration tool for the TMC2208 can be found [here](https://github.com/watterott/SilentStepStick/tree/master/software/ScriptCommunicator#tmc2208-configurator).
+
 #### Infos and Installation Guides for 3D Printers
 * [General (English)](http://reprap.org/wiki/TMC2100)
 * [General (German)](http://reprap.org/wiki/TMC2100/de)
