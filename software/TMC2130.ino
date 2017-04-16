@@ -2,13 +2,13 @@
   Trinamic TMC2130 Example
   
   Other examples/libraries can be found here:
-  https://github.com/makertum/Trinamic_TMC2130
   https://github.com/teemuatlut/TMC2130Stepper
+  https://github.com/makertum/Trinamic_TMC2130
 */
 
 #include "SPI.h"
 
-// Note: You also have to connect GND, 5V and VM.
+// Note: You also have to connect GND, 5V/VIO and VM.
 //       A connection diagram can be found in the schematics.
 #define EN_PIN    7 //enable (CFG6)
 #define DIR_PIN   8 //direction
