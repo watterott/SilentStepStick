@@ -7,7 +7,7 @@ To run the program:
 * Download [TMC2208.scez](https://github.com/watterott/SilentStepStick/raw/master/software/ScriptCommunicator/TMC2208.scez)
 * Start the *TMC2208.scez* file with the ScriptCommunicator: ```ScriptCommunicator TMC2208.scez```
 * Choose the right serial port and click *Connect*
-* Modifications are directly transmitted
+* Modifications in the Configurator are directly transmitted
 
 
 #### Hardware Connection
