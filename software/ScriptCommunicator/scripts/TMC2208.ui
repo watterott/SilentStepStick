@@ -109,7 +109,7 @@
          <rect>
           <x>20</x>
           <y>80</y>
-          <width>81</width>
+          <width>90</width>
           <height>20</height>
          </rect>
         </property>
@@ -151,7 +151,7 @@
          <rect>
           <x>20</x>
           <y>50</y>
-          <width>51</width>
+          <width>90</width>
           <height>20</height>
          </rect>
         </property>
@@ -164,7 +164,7 @@
          <rect>
           <x>20</x>
           <y>20</y>
-          <width>51</width>
+          <width>90</width>
           <height>20</height>
          </rect>
         </property>
@@ -177,7 +177,7 @@
          <rect>
           <x>20</x>
           <y>110</y>
-          <width>91</width>
+          <width>90</width>
           <height>20</height>
          </rect>
         </property>
@@ -271,7 +271,7 @@
          <rect>
           <x>20</x>
           <y>20</y>
-          <width>141</width>
+          <width>150</width>
           <height>18</height>
          </rect>
         </property>
@@ -284,7 +284,7 @@
          <rect>
           <x>20</x>
           <y>40</y>
-          <width>121</width>
+          <width>150</width>
           <height>18</height>
          </rect>
         </property>
@@ -297,7 +297,7 @@
          <rect>
           <x>20</x>
           <y>60</y>
-          <width>131</width>
+          <width>150</width>
           <height>18</height>
          </rect>
         </property>
@@ -510,12 +510,12 @@
          <rect>
           <x>190</x>
           <y>120</y>
-          <width>47</width>
+          <width>200</width>
           <height>13</height>
          </rect>
         </property>
         <property name="text">
-         <string>3...4</string>
+         <string>2...15 (default 3 in stealthChop)</string>
         </property>
        </widget>
        <widget class="QLabel" name="label_13">
@@ -523,12 +523,12 @@
          <rect>
           <x>190</x>
           <y>150</y>
-          <width>47</width>
+          <width>200</width>
           <height>13</height>
          </rect>
         </property>
         <property name="text">
-         <string>1...2</string>
+         <string>0...3 (1-2 recommended)</string>
         </property>
        </widget>
        <widget class="QLabel" name="label_14">
@@ -536,12 +536,12 @@
          <rect>
           <x>190</x>
           <y>180</y>
-          <width>47</width>
+          <width>200</width>
           <height>13</height>
          </rect>
         </property>
         <property name="text">
-         <string>1...7</string>
+         <string>1...7 (HEND+HSTRT &lt;= 16)</string>
         </property>
        </widget>
        <widget class="QLabel" name="label_15">
@@ -549,12 +549,12 @@
          <rect>
           <x>190</x>
           <y>210</y>
-          <width>47</width>
+          <width>200</width>
           <height>13</height>
          </rect>
         </property>
         <property name="text">
-         <string>1...7</string>
+         <string>1...7 (default 5 in stealthChop)</string>
         </property>
        </widget>
        <widget class="QSpinBox" name="TPWMTHRS_spinBox">
@@ -578,12 +578,12 @@
          <rect>
           <x>190</x>
           <y>270</y>
-          <width>47</width>
+          <width>200</width>
           <height>13</height>
          </rect>
         </property>
         <property name="text">
-         <string>12</string>
+         <string>0...15 (default 12)</string>
         </property>
        </widget>
        <widget class="QLabel" name="label_19">
@@ -591,7 +591,7 @@
          <rect>
           <x>220</x>
           <y>240</y>
-          <width>47</width>
+          <width>50</width>
           <height>13</height>
          </rect>
         </property>
@@ -675,12 +675,12 @@
          <rect>
           <x>190</x>
           <y>300</y>
-          <width>47</width>
+          <width>200</width>
           <height>13</height>
          </rect>
         </property>
         <property name="text">
-         <string>8</string>
+         <string>0...15 (default 8)</string>
         </property>
        </widget>
        <widget class="QSpinBox" name="PWM_OFS_spinBox">
@@ -701,12 +701,12 @@
          <rect>
           <x>190</x>
           <y>330</y>
-          <width>47</width>
+          <width>200</width>
           <height>13</height>
          </rect>
         </property>
         <property name="text">
-         <string>36</string>
+         <string>0...255 (default 36)</string>
         </property>
        </widget>
        <widget class="QLabel" name="label_25">
@@ -714,12 +714,12 @@
          <rect>
           <x>190</x>
           <y>360</y>
-          <width>47</width>
+          <width>200</width>
           <height>13</height>
          </rect>
         </property>
         <property name="text">
-         <string>14</string>
+         <string>0...255 (default 14 in stealthChop)</string>
         </property>
        </widget>
       </widget>
@@ -752,7 +752,7 @@
          <rect>
           <x>20</x>
           <y>20</y>
-          <width>171</width>
+          <width>200</width>
           <height>18</height>
          </rect>
         </property>
@@ -771,7 +771,7 @@
          <rect>
           <x>20</x>
           <y>40</y>
-          <width>171</width>
+          <width>200</width>
           <height>18</height>
          </rect>
         </property>
@@ -790,7 +790,7 @@
          <rect>
           <x>20</x>
           <y>70</y>
-          <width>171</width>
+          <width>200</width>
           <height>18</height>
          </rect>
         </property>
@@ -809,7 +809,7 @@
          <rect>
           <x>20</x>
           <y>90</y>
-          <width>171</width>
+          <width>200</width>
           <height>18</height>
          </rect>
         </property>
@@ -828,7 +828,7 @@
          <rect>
           <x>20</x>
           <y>110</y>
-          <width>171</width>
+          <width>200</width>
           <height>18</height>
          </rect>
         </property>
@@ -847,7 +847,7 @@
          <rect>
           <x>20</x>
           <y>130</y>
-          <width>171</width>
+          <width>200</width>
           <height>18</height>
          </rect>
         </property>
@@ -866,7 +866,7 @@
          <rect>
           <x>20</x>
           <y>150</y>
-          <width>171</width>
+          <width>200</width>
           <height>18</height>
          </rect>
         </property>
@@ -885,7 +885,7 @@
          <rect>
           <x>20</x>
           <y>170</y>
-          <width>171</width>
+          <width>200</width>
           <height>18</height>
          </rect>
         </property>
@@ -904,7 +904,7 @@
          <rect>
           <x>20</x>
           <y>200</y>
-          <width>191</width>
+          <width>200</width>
           <height>18</height>
          </rect>
         </property>
@@ -923,7 +923,7 @@
          <rect>
           <x>20</x>
           <y>220</y>
-          <width>191</width>
+          <width>200</width>
           <height>18</height>
          </rect>
         </property>
@@ -942,7 +942,7 @@
          <rect>
           <x>20</x>
           <y>240</y>
-          <width>191</width>
+          <width>200</width>
           <height>18</height>
          </rect>
         </property>
@@ -961,7 +961,7 @@
          <rect>
           <x>20</x>
           <y>260</y>
-          <width>191</width>
+          <width>200</width>
           <height>18</height>
          </rect>
         </property>
@@ -980,7 +980,7 @@
          <rect>
           <x>20</x>
           <y>280</y>
-          <width>201</width>
+          <width>200</width>
           <height>18</height>
          </rect>
         </property>
@@ -999,7 +999,7 @@
          <rect>
           <x>20</x>
           <y>300</y>
-          <width>201</width>
+          <width>200</width>
           <height>18</height>
          </rect>
         </property>
@@ -1083,7 +1083,7 @@
          <rect>
           <x>10</x>
           <y>20</y>
-          <width>91</width>
+          <width>90</width>
           <height>16</height>
          </rect>
         </property>
@@ -1096,7 +1096,7 @@
          <rect>
           <x>160</x>
           <y>20</y>
-          <width>47</width>
+          <width>50</width>
           <height>13</height>
          </rect>
         </property>
@@ -1128,7 +1128,7 @@
          <rect>
           <x>20</x>
           <y>20</y>
-          <width>231</width>
+          <width>200</width>
           <height>18</height>
          </rect>
         </property>
@@ -1147,7 +1147,7 @@
          <rect>
           <x>20</x>
           <y>40</y>
-          <width>171</width>
+          <width>200</width>
           <height>18</height>
          </rect>
         </property>
@@ -1231,7 +1231,7 @@
         </rect>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:600; color:#ff0000;&quot;&gt;WARNING!&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Write OTP memory (one bit at a time). Please refer to the TMC2208 datasheet!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:600; color:#ff0000;&quot;&gt;WARNING!&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Write OTP memory (one bit at a time). Please refer to the TMC2208 datasheet.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
       <widget class="QGroupBox" name="groupBox_5">
@@ -1264,12 +1264,12 @@
          <rect>
           <x>30</x>
           <y>30</y>
-          <width>47</width>
+          <width>50</width>
           <height>13</height>
          </rect>
         </property>
         <property name="text">
-         <string>OTPBYTE:</string>
+         <string>OTP BYTE:</string>
         </property>
        </widget>
        <widget class="QSpinBox" name="OTPBIT_spinBox">
@@ -1303,12 +1303,12 @@
          <rect>
           <x>30</x>
           <y>60</y>
-          <width>47</width>
+          <width>50</width>
           <height>13</height>
          </rect>
         </property>
         <property name="text">
-         <string>OTPBIT:</string>
+         <string>OTP BIT:</string>
         </property>
        </widget>
        <widget class="QLabel" name="label_30">
@@ -1316,7 +1316,7 @@
          <rect>
           <x>150</x>
           <y>60</y>
-          <width>47</width>
+          <width>50</width>
           <height>13</height>
          </rect>
         </property>
@@ -1329,7 +1329,7 @@
          <rect>
           <x>150</x>
           <y>30</y>
-          <width>47</width>
+          <width>50</width>
           <height>13</height>
          </rect>
         </property>
@@ -1347,7 +1347,20 @@
          </rect>
         </property>
         <property name="text">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Name: otp0.0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         <string>Name: otp0.0</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_32">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>30</y>
+          <width>430</width>
+          <height>100</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt;otp2.7=1&lt;/span&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt; enables spreadCycle mode&lt;br/&gt;&lt;br/&gt;&lt;/span&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt;otp1.0...otp1.3&lt;/span&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt; sets TOFF in spreadCycle (default 0, driver disabled)&lt;br/&gt;&lt;/span&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt;otp1.1=1&lt;/span&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt; sets TOFF=2&lt;br/&gt;&lt;/span&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt;otp1.0=1 + otp1.1=1&lt;/span&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt; sets TOFF=3&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
        </widget>
       </widget>
