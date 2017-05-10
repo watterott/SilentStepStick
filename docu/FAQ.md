@@ -12,9 +12,9 @@ Yes, because the TMC2xxx drivers use a chopper drive circuit to generate a const
 
 
 ## What is the difference between SilentStepSticks with 3-5V and 5V logic voltage?
-The SilentStepSticks with a variable logic voltage (VIO) of 3-5V use the internal linear regulator of the TMC21x0 to generate from the motor voltage (VM) a 5V voltage for the internal digital and analog circuit (about 20mA).
+The SilentStepSticks with a variable logic voltage (VIO) of 3-5V use the internal linear regulator of the TMC2xxx to generate from the motor voltage (VM) a 5V voltage for the internal digital and analog circuit (about 20mA).
 Because it is a linear voltage regulator the power dissipation depends on the motor voltage (high motor voltage = high power dissipation/heat).
-The 5V logic SilentStepSticks do not use the internal voltage regulator of TMC21x0 and therefor only a 5V supply voltage for VIO is possible and VM has not to be present before VIO.
+The 5V logic SilentStepSticks do not use the internal voltage regulator of TMC2xxx and therefor only a 5V supply voltage for VIO is possible and VM has not to be present before VIO.
 Further infos about power-up and down can be found [here](https://github.com/watterott/SilentStepStick/blob/master/docu/FAQ.md#what-to-consider-when-turning-the-power-supply-on-or-off).
 
 Power dissipation of the internal voltage regulator:
@@ -103,7 +103,7 @@ The motor voltage VM should come up first and then the logic voltage VIO, becaus
 *SilentStepSticks with 5V logic voltage:*
 There is no special power up sequence needed.
 
-Only after the logic voltage VIO is present and stable, the driver inputs (STEP, DIR, EN, CFG1...) can be driven with a high level.
+Only after the logic voltage VIO is present and stable, the driver inputs (STEP, DIR, EN, CFG...) can be driven with a high level.
 
 A step pulse (moving) should only be done after the motor voltage VM is present and stable.
 
