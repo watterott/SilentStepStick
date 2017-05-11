@@ -126,6 +126,7 @@ See also: [SilentStepStick Protector with flyback diodes](https://github.com/wat
 
 ## The motor makes noise in spreadCycle mode when it is not moving?
 A motor supply voltage of 12V is in most cases to low and in general the sound gets quieter if the motor supply voltage is above 18V.
+As workaround it is possible to activate the TMC21x0 automatic current reduction on standstill. This is done by not connecting the EN pin (EN=open).
 
 
 ## How to control the Trinamic stepper motor driver?
