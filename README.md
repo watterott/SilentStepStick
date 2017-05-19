@@ -70,28 +70,29 @@ _* without interpolation (microPlyer), ** further infos [here](https://github.co
 * [FAQ (Frequently Asked Questions)](https://github.com/watterott/SilentStepStick/blob/master/docu/FAQ.md)
 * [Schematics + Layout](https://github.com/watterott/SilentStepStick/tree/master/hardware) (PDF files include additional infos)
 * [Arduino Examples](https://github.com/watterott/SilentStepStick/tree/master/software)
+* [TMC2208 Configurator](https://github.com/watterott/SilentStepStick/tree/master/software/ScriptCommunicator#tmc2208-configurator)
 * [Eagle CAD Part](https://github.com/watterott/Eagle-Libs)
 
 
 ## Reviews and Tests
 
-* Review from Thomas Sanladerer
+* TMC2100 Review from Thomas Sanladerer
 
-  [![SilentStepStick/TMC2100 Review](http://img.youtube.com/vi/g6Bxoqr8QlY/0.jpg)](https://www.youtube.com/watch?v=g6Bxoqr8QlY)
+  [![SilentStepStick TMC2100 Review](http://img.youtube.com/vi/g6Bxoqr8QlY/0.jpg)](https://www.youtube.com/watch?v=g6Bxoqr8QlY)
 
-  [![SilentStepStick/TMC2100 Review Update](http://img.youtube.com/vi/mYuZqx8xwTg/0.jpg)](https://www.youtube.com/watch?v=mYuZqx8xwTg)
+  [![SilentStepStick TMC2100 Review Update](http://img.youtube.com/vi/mYuZqx8xwTg/0.jpg)](https://www.youtube.com/watch?v=mYuZqx8xwTg)
 
-* Review from Peter Recktenwald
+* TMC2100 Review from Peter Recktenwald
 
-  [![SilentStepStick/TMC2100 Review](http://img.youtube.com/vi/P3ebhi-vZRY/0.jpg)](https://www.youtube.com/watch?v=P3ebhi-vZRY)
+  [![SilentStepStick TMC2100 Review](http://img.youtube.com/vi/P3ebhi-vZRY/0.jpg)](https://www.youtube.com/watch?v=P3ebhi-vZRY)
 
-* Review from Georg Mill
-
-  [<img src="http://blog.georgmill.de/wp-content/uploads/2015/06/steppermotor_intro.jpg" width="400" height="225">](http://blog.georgmill.de/2015/06/18/schrittmotor-test-5-treiber-im-vergleich/)
-
-* Review from Moritz Walter
+* TMC2130 Review from Moritz Walter
 
   [<img src="https://hackadaycom.files.wordpress.com/2016/09/tmc_thumb1.jpg" width="400" height="400">](http://hackaday.com/2016/09/30/3d-printering-trinamic-tmc2130-stepper-motor-drivers-shifting-the-gears/)
+
+* TMC2208 Review from Trinamic
+
+  [![SilentStepStick TMC2208 Review](http://img.youtube.com/vi/FvW93yCbqFE/0.jpg)](https://www.youtube.com/watch?v=FvW93yCbqFE)
 
 * What is Trinamic spreadCycle and stealthChop?
 
