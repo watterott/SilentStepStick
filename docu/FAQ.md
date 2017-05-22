@@ -36,6 +36,8 @@ More information can be found here in the [SilentStepStick schematics](https://g
 [TMC2130 datasheet](http://www.trinamic.com/products/integrated-circuits/details/tmc2130/) or
 [TMC2208 datasheet](http://www.trinamic.com/products/integrated-circuits/details/tmc2208-la/).
 
+A configuration tool for the TMC2208 can be found [here](https://github.com/watterott/SilentStepStick/tree/master/software/ScriptCommunicator#tmc2208-configurator).
+
 Detailed information about the operating modes:
 [stealthChop](https://www.trinamic.com/technology/adv-technologies/stealthchop/) and
 [spreadCycle](https://www.trinamic.com/technology/adv-technologies/spreadcycle/).
@@ -44,20 +46,6 @@ For most cases the **1/16 stealthChop** mode (TMC2100: CFG1=open, CFG2=open, CFG
 If you have problems like step losses then you can use a higher current setting in stealthChop with automatic power-down (open/unconnected EN pin)
 or you can use the more powerful **1/16 spreadCycle** mode (TMC2100: CFG1=GND, CFG2=open, CFG3=open).
 
-A configuration tool for the TMC2208 can be found [here](https://github.com/watterott/SilentStepStick/tree/master/software/ScriptCommunicator#tmc2208-configurator).
-
-#### Infos and Installation Guides for 3D Printers
-* [General (English)](http://reprap.org/wiki/TMC2100)
-* [General (German)](http://reprap.org/wiki/TMC2100/de)
-* [General (French)](http://reso-nance.org/wiki/materiel/silentstepstick/accueil)
-* [General (Russian)](http://3deshnik.ru/blogs/akdzg/chto-zhe-delat-belami-tmc2100)
-* [General (Japanese)](http://3dp0.com/silentstepstick)
-* [Assembly Guide (English)](https://www.youtube.com/watch?v=L2xNXTQO8xc)
-* [RAMPS (English)](http://www.instructables.com/id/Install-and-configure-SilentStepStick-in-RAMPS-TMC/)
-* [Ultimaker UMO + TMC2100 (English)](https://ultimaker.com/en/community/11571-step-by-step-installation-of-silentstepstick-drivers-on-umo)
-* [Ultimaker UMO + TMC2130 (English)](https://ultimaker.com/en/community/20090-step-by-step-installation-of-sss-tmc2130-on-umo)
-* [TMC2130 (English)](http://hackaday.com/2016/09/30/3d-printering-trinamic-tmc2130-stepper-motor-drivers-shifting-the-gears/)
-
 #### Boards with USB Power Supply
 Only applicable for SilentStepSticks with variable 3-5V logic voltage (VIO):
 If you use a control board with USB power supply (like Arduino + RAMPS) then always ensure that the motor voltage (VM) is present, when you connect the board via USB.
@@ -65,10 +53,21 @@ Otherwise the TMC2xxx is not powered via the internal voltage regulator and a hi
 As safety workaround you can disconnect the 5V signal in the USB cable, so that the board cannot be powered over USB.
 
 #### RAMPS 1.4 and RUMBA Notes
-If you remove all jumpers (or open all switches) for MS1+MS2+MS3, then the SilentStepStick TMC2100 driver will be in 1/16 spreadCycle mode (CFG1=GND, CFG2=open, CFG3=open), because there is a pull-down resistor on MS1 on the RAMPS.
+For most cases (except the extruder) the **1/16 stealthChop** mode is suitable. On the SilentStepStick TMC2100 this mode is set when all CFG pins are open/unconnected. 
+If you remove all jumpers (or open all switches) for MS1+MS2+MS3 on the RAMPS/RUMBA, then the SilentStepStick TMC2100 driver will be in **1/16 spreadCycle mode** (CFG1=GND, CFG2=open, CFG3=open), because there is a pull-down resistor on MS1 on the RAMPS.
 The pull-down is 100k and in most cases it will set the driver in spreadCycle mode correctly. However if there are problems then short CFG1 to GND or replace the resistor with one which is 30k or less.
 If you have not an original [RAMPS 1.4](http://reprap.org/wiki/RAMPS_1.4) or [RUMBA](http://reprap.org/wiki/RUMBA), then your schematics can be different and you have to check the MS-Pin configurations on you board.
 We recommend the TMC2100 SilentStepStick with 5V for RAMPS and RUMBA boards, because they use 5V logic.
+
+#### Infos and Installation Guides for 3D Printers
+* General: [English](http://reprap.org/wiki/TMC2100),
+           [German](http://reprap.org/wiki/TMC2100/de),
+           [French](http://reso-nance.org/wiki/materiel/silentstepstick/accueil),
+           [Russian](http://3deshnik.ru/blogs/akdzg/chto-zhe-delat-belami-tmc2100),
+           [Japanese](http://3dp0.com/silentstepstick)
+* [Ultimaker UMO + TMC2100 (English)](https://ultimaker.com/en/community/11571-step-by-step-installation-of-silentstepstick-drivers-on-umo)
+* [Ultimaker UMO + TMC2130 (English)](https://ultimaker.com/en/community/20090-step-by-step-installation-of-sss-tmc2130-on-umo)
+* [TMC2130 (English)](http://hackaday.com/2016/09/30/3d-printering-trinamic-tmc2130-stepper-motor-drivers-shifting-the-gears/)
 
 
 ## How to set the stepper motor current?
