@@ -15097,17 +15097,17 @@ supply external clock</text>
 <text x="111.76" y="58.42" size="1.778" layer="95" font="vector" ratio="10" align="top-left">MS1
 
 GND
-VCC
+VIO
 GND
-VCC
+VIO
 
 To access all other modes (eg spreadCycle) you have to use the UART interface.</text>
 <text x="121.92" y="58.42" size="1.778" layer="95" font="vector" ratio="10" align="top-left">MS2
 
 GND
 GND
-VCC
-VCC</text>
+VIO
+VIO</text>
 <text x="132.08" y="58.42" size="1.778" layer="95" font="vector" ratio="10" align="top-left">Steps
 
 8
