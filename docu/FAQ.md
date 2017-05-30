@@ -7,6 +7,24 @@ The TMC21x0 config pins also know three states: low (GND), high (VIO) and open (
 The TMC2130 can be configured via CFG pins or [SPI](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus) and the TMC2208 via CFG pins or [UART](https://en.wikipedia.org/wiki/Universal_asynchronous_receiver/transmitter).
 
 
+## Which operating mode should I use?
+For most cases (except a 3D printer extruder) the **1/16 stealthChop** mode (TMC2100: CFG1=open CFG2=open CFG3=open, default on TMC2208) is suitable.
+If you have problems like step losses then you can use a [slower acceleration](https://www.youtube.com/watch?v=c3v9E1AwDBE) or a bit higher current setting in stealthChop 
+or you can use the more powerful **1/16 spreadCycle** mode (TMC2100: CFG1=GND CFG2=open CFG3=open).
+
+#### Boards with USB Power Supply
+Only applicable for SilentStepSticks with variable 3-5V logic voltage (VIO):
+If you use a control board with USB power supply (like Arduino + RAMPS) then always ensure that the motor voltage (VM) is present, when you connect the board via USB.
+Otherwise the TMC2xxx is not powered via the internal voltage regulator and a high current can flow into VIO or the IOs and this can damage the internal logic.
+As safety workaround you can disconnect the 5V signal in the USB cable, so that the board cannot be powered over USB.
+
+#### RAMPS 1.4 and RUMBA Notes
+For most cases the **1/16 stealthChop** mode is suitable and we recommend the TMC2100 SilentStepStick with 5V for RAMPS and RUMBA boards, because they use 5V logic.
+If you remove all jumpers (or open all switches) for MS1+MS2+MS3 on the RAMPS/RUMBA, then the SilentStepStick TMC2100 driver will be in **1/16 spreadCycle mode** (CFG1=GND CFG2=open CFG3=open), because there is a pull-down resistor on MS1 on the RAMPS/RUMBA.
+The pull-down is 100k and in most cases it will set the driver in spreadCycle mode correctly. However if there are problems then short CFG1 to GND or replace the resistor with one which is 30k or less.
+If you have not an original [RAMPS 1.4](http://reprap.org/wiki/RAMPS_1.4) or [RUMBA](http://reprap.org/wiki/RUMBA), then your schematics can be different and you have to check the MS-Pin configurations on you board.
+
+
 ## Can I use a stepper motor with a lower voltage than the driver motor supply voltage?
 Yes, because the TMC2xxx drivers use a chopper drive circuit to generate a constant current in each winding (motor phase) rather than applying a constant voltage.
 
@@ -31,7 +49,7 @@ In contrast on the TMC2130 SilentStepSticks the CFG0 pin (also SDO) is open as d
 
 
 ## Where can I find more information on the settings and operation modes?
-More information can be found here in the [SilentStepStick schematics](https://github.com/watterott/SilentStepStick/tree/master/hardware) and
+More information can be found in the [SilentStepStick schematics (PDF files)](https://github.com/watterott/SilentStepStick/tree/master/hardware) and
 [TMC2100 datasheet](http://www.trinamic.com/products/integrated-circuits/details/tmc2100/),
 [TMC2130 datasheet](http://www.trinamic.com/products/integrated-circuits/details/tmc2130/) or
 [TMC2208 datasheet](http://www.trinamic.com/products/integrated-circuits/details/tmc2208-la/).
@@ -41,23 +59,6 @@ A configuration tool for the TMC2208 can be found [here](https://github.com/watt
 Detailed information about the operating modes:
 [stealthChop](https://www.trinamic.com/technology/adv-technologies/stealthchop/) and
 [spreadCycle](https://www.trinamic.com/technology/adv-technologies/spreadcycle/).
-
-For most cases the **1/16 stealthChop** mode (TMC2100: CFG1=open, CFG2=open, CFG3=open) is suitable.
-If you have problems like step losses then you can use a higher current setting in stealthChop with automatic power-down (open/unconnected EN pin)
-or you can use the more powerful **1/16 spreadCycle** mode (TMC2100: CFG1=GND, CFG2=open, CFG3=open).
-
-#### Boards with USB Power Supply
-Only applicable for SilentStepSticks with variable 3-5V logic voltage (VIO):
-If you use a control board with USB power supply (like Arduino + RAMPS) then always ensure that the motor voltage (VM) is present, when you connect the board via USB.
-Otherwise the TMC2xxx is not powered via the internal voltage regulator and a high current can flow into VIO or the IOs and this can damage the internal logic.
-As safety workaround you can disconnect the 5V signal in the USB cable, so that the board cannot be powered over USB.
-
-#### RAMPS 1.4 and RUMBA Notes
-For most cases (except the extruder) the **1/16 stealthChop** mode is suitable. On the SilentStepStick TMC2100 this mode is set when all CFG pins are open/unconnected. 
-If you remove all jumpers (or open all switches) for MS1+MS2+MS3 on the RAMPS/RUMBA, then the SilentStepStick TMC2100 driver will be in **1/16 spreadCycle mode** (CFG1=GND, CFG2=open, CFG3=open), because there is a pull-down resistor on MS1 on the RAMPS.
-The pull-down is 100k and in most cases it will set the driver in spreadCycle mode correctly. However if there are problems then short CFG1 to GND or replace the resistor with one which is 30k or less.
-If you have not an original [RAMPS 1.4](http://reprap.org/wiki/RAMPS_1.4) or [RUMBA](http://reprap.org/wiki/RUMBA), then your schematics can be different and you have to check the MS-Pin configurations on you board.
-We recommend the TMC2100 SilentStepStick with 5V for RAMPS and RUMBA boards, because they use 5V logic.
 
 #### Infos and Installation Guides for 3D Printers
 * General: [English](http://reprap.org/wiki/TMC2100),
