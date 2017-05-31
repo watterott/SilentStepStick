@@ -15,6 +15,7 @@ To run the program:
 ![Hardware Connection](https://github.com/watterott/SilentStepStick/raw/master/software/ScriptCommunicator/hw_connection.png)
 
 You can use every RS232 serial adapter with 0-5V logic levels (e.g. FTDI-Breakout).
+A connection adapter can be found here: [SilentStepStick Tester/Programmer](https://github.com/watterott/SilentStepStick#shop).
 
 Note: The jumper J2 next to the PDN_UART pin has to be closed on the TMC2208 SilentStepStick.
 
