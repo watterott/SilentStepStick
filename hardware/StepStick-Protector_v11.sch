@@ -8710,6 +8710,10 @@ TMC2130 - SPI for configuration&lt;br&gt;
 <text x="162.56" y="19.05" size="1.27" layer="95">http://creativecommons.org/licenses/by-sa/4.0/</text>
 <text x="162.56" y="15.24" size="1.27" layer="95">Designed by Andreas Watterott (Watterott electronic)</text>
 <text x="162.56" y="83.82" size="1.778" layer="97" align="center">Schottky Diodes 2A/60V</text>
+<text x="83.82" y="93.98" size="1.778" layer="97" align="top-right">J1 enables spreadCycle on TMC2100.
+
+1/16 stealthChop: CFG1=open CFG2=open CFG3=open
+1/16 spreadCycle: CFG1=GND CFG2=open CFG3=open</text>
 </plain>
 <instances>
 <instance part="X1" gate="G$1" x="165.1" y="8.89"/>
@@ -8854,4 +8858,10 @@ TMC2130 - SPI for configuration&lt;br&gt;
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
