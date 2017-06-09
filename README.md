@@ -62,7 +62,7 @@ _* without interpolation (microPlyer), ** further infos [here](https://github.co
 * Extra features of **TMC2208**:
   * UART configuration interface (9600...500k Baud)
   * up to 256 native microsteps (without interpolation)
-  * **stealthChop2** - improved stealthChop for quiet operation and smooth motion
+  * **stealthChop2** - faster motor acceleration/deceleration than stealthChop
   * Automatic stealthChop and spreadCycle switchover depending on velocity
 
 
