@@ -46,6 +46,7 @@ Power dissipation of the internal voltage regulator:
 The configuration for TMC2130 in standalone mode (SPI jumper closed) is set via the CFG pins like the TMC2100.
 On the TMC2100 SilentStepSticks the CFG0 pin is set to GND as default and this sets the chopper off time to 140 Tclk (most universal choice).
 In contrast on the TMC2130 SilentStepSticks the CFG0 pin (also SDO) is open as default and this sets the chopper off time to 332 Tclk.
+On the TMC2130 SilentStepSticks the CFG3 pin is also connected to the pin header and should be left unconnected/open (external reference voltage on AIN) in standalone mode.
 
 
 ## Where can I find more information on the settings and operation modes?
