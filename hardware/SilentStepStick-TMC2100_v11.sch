@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="11" fill="1" visible="no" active="no"/>
@@ -62,6 +62,7 @@
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="53" name="tPadExt" color="7" fill="6" visible="no" active="no"/>
 <layer number="54" name="bPadExt" color="1" fill="3" visible="no" active="no"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -15142,6 +15143,9 @@ stealthChop</text>
 <wire x1="59.055" y1="31.75" x2="60.325" y2="31.75" width="1.016" layer="94"/>
 <wire x1="59.055" y1="24.13" x2="60.325" y2="24.13" width="1.016" layer="94"/>
 <wire x1="16.51" y1="50.8" x2="16.51" y2="53.34" width="1.016" layer="94"/>
+<text x="21.59" y="49.53" size="1.778" layer="97" font="vector" ratio="10" align="top-left">TOFF=4</text>
+<text x="21.59" y="31.75" size="1.778" layer="97" font="vector" ratio="10" align="top-left">HEND=7</text>
+<text x="21.59" y="13.97" size="1.778" layer="97" font="vector" ratio="10" align="top-left">TBL=%01</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="118.11" y="109.22"/>
