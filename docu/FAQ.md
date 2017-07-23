@@ -8,9 +8,9 @@ The TMC2130 can be configured via CFG pins or [SPI](https://en.wikipedia.org/wik
 
 
 ## Which operating mode should I use?
-For most cases (except a 3D printer extruder) the **1/16 stealthChop** mode (TMC2100: CFG1=open CFG2=open CFG3=open, default on TMC2208) is suitable.
+For most cases (except a 3D printer extruder) the **1/16 stealthChop** mode (TMC2100: CFG1=open CFG2=open, default on TMC2208) is suitable.
 If you have problems like step losses then you can use a [slower acceleration](https://www.youtube.com/watch?v=c3v9E1AwDBE) or a bit higher current setting in stealthChop 
-or you can use the more powerful and louder **1/16 spreadCycle** mode (TMC2100: CFG1=GND CFG2=open CFG3=open).
+or you can use the more powerful and louder **1/16 spreadCycle** mode (TMC2100: CFG1=GND CFG2=open).
 
 #### Boards with USB Power Supply
 Only applicable for SilentStepSticks with variable 3-5V logic voltage (VIO):
@@ -20,7 +20,7 @@ As safety workaround you can disconnect the 5V signal in the USB cable, so that 
 
 #### RAMPS 1.4 and RUMBA Notes
 For most cases the **1/16 stealthChop** mode is suitable and we recommend the TMC2100 SilentStepStick with 5V for RAMPS and RUMBA boards, because they use 5V logic.
-If you remove all jumpers (or open all switches) for MS1+MS2+MS3 on the RAMPS/RUMBA, then the SilentStepStick TMC2100 driver will be in **1/16 spreadCycle mode** (CFG1=GND CFG2=open CFG3=open), because there is a pull-down resistor on MS1 on the RAMPS/RUMBA.
+If you remove all jumpers (or open all switches) for MS1+MS2+MS3 on the RAMPS/RUMBA, then the SilentStepStick TMC2100 driver will be in **1/16 spreadCycle mode** (CFG1=GND CFG2=open), because there is a pull-down resistor on MS1 on the RAMPS/RUMBA.
 The pull-down is 100k and in most cases it will set the driver in spreadCycle mode correctly. However if there are problems then short CFG1 to GND or replace the resistor with one which is 30k or less.
 If you have not an original [RAMPS 1.4](http://reprap.org/wiki/RAMPS_1.4) or [RUMBA](http://reprap.org/wiki/RUMBA), then your schematics can be different and you have to check the MS-Pin configurations on you board.
 
