@@ -21,7 +21,7 @@ coolStep                 | no                  | no                  | yes      
 stallGuard               | no                  | no                  | yes                 | no
 dcStep                   | no                  | no                  | yes                 | no
 
-_* without interpolation (microPlyer), ** further infos [here](https://github.com/watterott/SilentStepStick/blob/master/docu/FAQ.md#what-is-the-difference-between-silentstepsticks-with-3-5v-and-5v-logic-voltage)_
+_* without interpolation (microPlyer), ** further infos [here](https://github.com/watterott/SilentStepStick/blob/master/docs/FAQ.md#what-is-the-difference-between-silentstepsticks-with-3-5v-and-5v-logic-voltage)_
 
 
 ## Shop
@@ -46,10 +46,8 @@ _* without interpolation (microPlyer), ** further infos [here](https://github.co
 
 ## Features
 * Hardware compatible with [StepStick](http://reprap.org/wiki/StepStick) and [Pololu A4988](https://www.pololu.com/product/1182)
-* Components on bottom PCB side for better heat emission, further infos [here](https://github.com/watterott/SilentStepStick/blob/master/docu/FAQ.md#why-is-the-tmc2100-chip-on-the-bottom-pcb-side)
+* Components on bottom PCB side for better heat emission, further infos [here](https://github.com/watterott/SilentStepStick/blob/master/docs/FAQ.md#why-is-the-tmc2100-chip-on-the-bottom-pcb-side)
 * Trinamic stepper motor driver (chopper drive / constant current drive)
-* Step/Dir interface with up to 256 microsteps and interpolation
-* Motor current: up to **1.2A RMS** continuously (active cooling required)
 * Automatic standby current reduction
 * **microPlyer** - microstep interpolator for increased smoothness of microstepping
 * **stealthChop** - for quiet operation and smooth motion
@@ -69,8 +67,8 @@ _* without interpolation (microPlyer), ** further infos [here](https://github.co
 
 
 ## Hardware and Software
-* [FAQ (Frequently Asked Questions)](https://github.com/watterott/SilentStepStick/blob/master/docu/FAQ.md)
 * [Schematics + Layout](https://github.com/watterott/SilentStepStick/tree/master/hardware) (PDF files include additional infos)
+* [FAQ (Frequently Asked Questions)](https://github.com/watterott/SilentStepStick/blob/master/docs/FAQ.md)
 * [Arduino Examples](https://github.com/watterott/SilentStepStick/tree/master/software)
 * [TMC2208 Configurator](https://github.com/watterott/SilentStepStick/tree/master/software/ScriptCommunicator#tmc2208-configurator)
 * [Eagle CAD Part](https://github.com/watterott/Eagle-Libs)
