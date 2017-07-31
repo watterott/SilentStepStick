@@ -55,7 +55,7 @@ More information can be found in the [SilentStepStick schematics (PDF files)](ht
 [TMC2130 datasheet](http://www.trinamic.com/products/integrated-circuits/details/tmc2130/) or
 [TMC2208 datasheet](http://www.trinamic.com/products/integrated-circuits/details/tmc2208-la/).
 
-A configuration tool for the TMC2208 can be found [here](https://github.com/watterott/SilentStepStick/tree/master/software/ScriptCommunicator#tmc2208-configurator).
+A configuration tool for the TMC2208 can be found [here](https://github.com/watterott/SilentStepStick/tree/master/docs/ScriptCommunicator#tmc2208-configurator).
 
 Detailed information about the operating modes:
 [stealthChop](https://www.trinamic.com/technology/adv-technologies/stealthchop/) and
