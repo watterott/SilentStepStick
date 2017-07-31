@@ -12,7 +12,7 @@ To run the program:
 
 #### Hardware Connection
 
-![Hardware Connection](https://github.com/watterott/SilentStepStick/raw/master/software/docs/hw_connection.png)
+![Hardware Connection](https://github.com/watterott/SilentStepStick/raw/master/docs/ScriptCommunicator/hw_connection.png)
 
 You can use every RS232 serial adapter with 0-5V logic levels (e.g. FTDI-Breakout).
 A connection adapter can be found here: [SilentStepStick Tester/Programmer](https://github.com/watterott/SilentStepStick#shop).
