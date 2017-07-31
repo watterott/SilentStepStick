@@ -43,6 +43,26 @@ dcStep                   | no                  | no                  | yes      
 _* without interpolation (microPlyer), ** further infos [here](https://github.com/watterott/SilentStepStick/blob/master/docs/FAQ.md#what-is-the-difference-between-silentstepsticks-with-3-5v-and-5v-logic-voltage)_
 
 
+## Shop
+* Trinamic **TMC2100** based drivers, recommended for most applications (CFG pins for configuration)
+  * [TMC2100 SilentStepStick (3-5V logic voltage)](http://www.watterott.com/en/SilentStepStick)
+  * [TMC2100 SilentStepStick (3-5V logic voltage) with soldered Pin Headers](http://www.watterott.com/en/SilentStepStick-with-Pins)
+  * [Bundle: 4x TMC2100 SilentStepStick (3-5V logic voltage)](http://www.watterott.com/en/SilentStepStick-TMC2100-3D-Printer-Bundle)
+  * [TMC2100 SilentStepStick (5V logic voltage)](http://www.watterott.com/en/SilentStepStick-TMC2100-5V)
+  * [TMC2100 SilentStepStick (5V logic voltage) with soldered Pin Headers](http://www.watterott.com/en/SilentStepStick-TMC2100-5V-with-Pins)
+  * [Bundle: 4x TMC2100 SilentStepStick (5V logic voltage)](http://www.watterott.com/en/SilentStepStick-TMC2100-3D-Printer-Bundle-5V)
+* Trinamic **TMC2130** based drivers (CFG pins or SPI for configuration)
+  * [TMC2130 SilentStepStick (3-5V logic voltage)](http://www.watterott.com/en/SilentStepStick-TMC2130)
+* Trinamic **TMC2208** based drivers (CFG pins or UART for configuration)
+  * [TMC2208 SilentStepStick (3-5V logic voltage)](http://www.watterott.com/en/SilentStepStick-TMC2208)
+* Accessories
+  * [SilentStepStick Protector (with flyback diodes)](http://www.watterott.com/en/SilentStepStick-Protector)
+  * [SilentStepStick Tester/Programmer](http://www.watterott.com/en/SilentStepStick-Tester)
+  * [Suitable Heatsink 10x10mm](http://www.watterott.com/en/Pin-heatsink-square-ICK-S-10-x-10-x-125)
+  * [Suitable Heatsink 10x6mm](http://www.watterott.com/en/Heatsink-for-DIL-IC-PLCC-und-SMD-10-x-6-mm)
+  * [Suitable Heatsink 8x6mm](http://www.watterott.com/en/Heatsinks-6-3x8mm)
+
+
 ## Hardware and Software
 * [Schematics + Layout](https://github.com/watterott/SilentStepStick/tree/master/hardware) (PDF files include additional infos)
 * [FAQ (Frequently Asked Questions)](https://github.com/watterott/SilentStepStick/blob/master/docs/FAQ.md)
