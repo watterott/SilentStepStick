@@ -130,6 +130,13 @@ A motor supply voltage of 12V is in most cases to low and in general the sound g
 As workaround it is possible to activate the TMC21x0 automatic current reduction on standstill. This is done by not connecting the EN pin (EN=open).
 
 
+## The driver does not work or stopped working. What should I do?
+On problems, check the wiring and power supply.
+If this is okay, check the resistance of the logic supply VIO against GND, the digital pins EN, DIR, STEP against GND + VIO and the motor pins M1A, M1B, M2A, M2B against GND + VM.
+When the resistance of the logic supply or a digital input is very low (<100 Ohm), then in general there is a problem with the power-up or power-down sequence.
+Or if the resistance of a motor pin is very low (<100 Ohm) then there could be a problem with the motor wiring (loose connection) or the motor supply was removed during operation/moving.
+
+
 ## How to control the Trinamic stepper motor driver?
 The SilentStepStick has a normal step+direction interface.
 You set the direction with the DIR pin and on every pulse on the STEP pin the motor will move one step.
