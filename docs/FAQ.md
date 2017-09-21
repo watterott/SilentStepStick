@@ -75,7 +75,7 @@ Detailed information about the operating modes:
 ## How to set the stepper motor current?
 The best way to set the motor current is by measuring the voltage on the ```Vref``` pin (0...2.5V) and
 adjusting the voltage with the potentiometer.
-The maximum motor current is 1.77A RMS and is set via the 0.11Ohm sense resistors.
+The maximum motor current is 1.77A RMS (0.11Ohm sense resistors).
 
 ```Irms = (Vref * 1.77A) / 2.5V = Vref * 0.71```
 
@@ -92,7 +92,7 @@ A voltage of 1.0V on Vref sets the motor current to 0.71A RMS.
 
 **Note:**
 On some stepper motor drivers the maximum current (e.g. A4988) is set via Vref and on others the RMS current (e.g. TMC2100).
-The Trinamic drivers have an automatic thermal shutdown (at about 150°C) if the chip gets to hot.
+The Trinamic drivers have an automatic thermal shutdown (at about 150°C) if the chip gets to hot. But always ensure a good cooling of the drivers.
 
 
 ## What to consider when turning the power supply on or off?
@@ -128,6 +128,7 @@ See also: [SilentStepStick Protector with flyback diodes](https://github.com/wat
 ## The motor makes noise in spreadCycle mode when it is not moving?
 A motor supply voltage of 12V is in most cases to low and in general the sound gets quieter if the motor supply voltage is above 18V.
 As workaround it is possible to activate the TMC21x0 automatic current reduction on standstill. This is done by not connecting the EN pin (EN=open).
+Note, most control boards of 3D printers turn off the drivers when the print is finished and so the automatic current reduction is not needed.
 
 
 ## The driver does not work or stopped working. What should I do?
