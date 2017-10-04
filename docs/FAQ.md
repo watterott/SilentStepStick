@@ -22,6 +22,9 @@ As safety workaround you can disconnect the 5V signal in the USB cable, so that 
 For most cases the **1/16 stealthChop** mode is suitable and we recommend the TMC2100 SilentStepStick with 5V for RAMPS and RUMBA boards, because they use 5V logic.
 If you remove all jumpers (or open all switches) for MS1+MS2+MS3 on the RAMPS/RUMBA, then the SilentStepStick TMC2100 driver will be in **1/16 spreadCycle mode** (CFG1=GND CFG2=open), because there is a pull-down resistor on MS1 on the RAMPS/RUMBA.
 The pull-down is 100k and in most cases it will set the driver in spreadCycle mode correctly. However if there are problems then short CFG1 to GND or replace the resistor with one which is 30k or less.
+
+On a SilentStepStick TMC2208 the jumpers have to be set for MS1+MS2 then the TMC2208 will be in **1/16 stealthChop** mode.
+
 If you have not an original [RAMPS 1.4](http://reprap.org/wiki/RAMPS_1.4) or [RUMBA](http://reprap.org/wiki/RUMBA), then your schematics can be different and you have to check the MS-Pin configurations on you board.
 
 
