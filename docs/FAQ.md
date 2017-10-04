@@ -8,9 +8,9 @@ The TMC2130 can be configured via CFG pins or [SPI](https://en.wikipedia.org/wik
 
 
 ## Which operating mode should I use?
-For most cases (except a 3D printer extruder) the **1/16 stealthChop** mode (TMC2100: CFG1=open CFG2=open, default on TMC2208) is suitable.
+For most cases (except a 3D printer extruder) the **1/16 stealthChop** mode (TMC2100: CFG1=open CFG2=open, TMC2208: MS1=VIO MS2=VIO) is suitable.
 If you have problems like step losses then you can use a [slower acceleration](https://www.youtube.com/watch?v=c3v9E1AwDBE) or a bit higher current setting in stealthChop 
-or you can use the more powerful and louder **1/16 spreadCycle** mode (TMC2100: CFG1=GND CFG2=open).
+or you can use the more powerful and louder **1/16 spreadCycle** mode (TMC2100: CFG1=GND CFG2=open, TMC2208: configurate via UART).
 
 #### Boards with USB Power Supply
 Only applicable for SilentStepSticks with variable 3-5V logic voltage (VIO):
