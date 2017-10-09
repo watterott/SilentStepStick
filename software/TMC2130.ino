@@ -94,11 +94,11 @@ void setup()
   Serial.println("\nStart...");
 
   //init SPI
+  SPI.begin();
   //SPI.setDataMode(SPI_MODE3); //SPI Mode 3
   //SPI.setBitOrder(MSBFIRST); //MSB first
   //SPI.setClockDivider(SPI_CLOCK_DIV128); //clk=Fcpu/128
   SPI.beginTransaction(SPISettings(1000000, MSBFIRST, SPI_MODE3));
-  SPI.begin();
 
   //set TMC2130 config
   tmc_write(WRITE_FLAG|REG_GCONF,      0x00000001UL); //voltage on AIN is current reference
