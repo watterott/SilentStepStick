@@ -99,15 +99,15 @@ The Trinamic drivers have an automatic thermal shutdown (at about 150°C) if the
 
 
 ## What to consider when turning the power supply on or off?
-### Power on
 
-**SilentStepSticks with variable 3-5V logic voltage:**
-The motor voltage VM should come up first and then the logic voltage VIO, because the internal logic of the TMC2xxx driver is powered from VM.
+### SilentStepSticks with variable 3-5V logic voltage
+At power-up the motor voltage VM should come up first and then the logic voltage VIO and on power-down the logic voltage VIO should turned off at first and then the motor voltage VM. Because the internal logic of the TMC2xxx driver is powered from VM.
 
-**SilentStepSticks with 5V logic voltage:**
-There is no special power up sequence needed.
-If the SilentStepStick is only powered with 5V then a current can flow backwards to VM. In this case no loads should be on VM (<=4V), because the current will be drawn from the logic supply.
+### SilentStepSticks with 5V logic voltage
+There is no special power-up or power-down sequence needed.
+If the SilentStepStick is only powered with 5V (logic) then a current can flow backwards to VM. In this case no loads should be on VM (<=4V). Because the current will be drawn from the logic supply.
 
+### All SilentStepSticks
 Only after the logic voltage VIO is present and stable, the driver inputs (STEP, DIR, EN, CFG...) can be driven with a high level.
 
 A step pulse (moving) should only be done after the motor voltage VM is present and stable.
@@ -115,17 +115,7 @@ A step pulse (moving) should only be done after the motor voltage VM is present 
 Because the motor voltage VM is a strong power supply with a high voltage, also ensure that there cannot occur voltage spikes on power up.
 See [Pololu: Understanding Destructive LC Voltage Spikes](https://www.pololu.com/docs/0J16/all).
 
-#### Power off
-
-**SilentStepSticks with variable 3-5V logic voltage:**
-The logic voltage VIO should turned off at first and then the motor voltage VM, because the internal logic of the TMC2xxx driver is powered from VM.
-
-**SilentStepSticks with 5V logic voltage:**
-There is no special power off sequence needed.
-If the SilentStepStick is only powered with 5V then a current can flow backwards to VM. In this case no loads should be on VM (<=4V), because the current will be drawn from the logic supply.
-
 If the motor is running/moving, then it is not allowed to switch off the power supply. Always make sure that the motor stands still on shutting down, otherwise the TMC2xxx driver can get damaged.
-
 An **emergency stop** can be realized, when the EN/CFG6 pin is set to VIO (high). This will switch off all power drivers and will put the motor into freewheeling.
 See also: [SilentStepStick Protector with flyback diodes](https://github.com/watterott/SilentStepStick#shop)
 
