@@ -124,7 +124,6 @@ The logic voltage VIO should turned off at first and then the motor voltage VM, 
 There is no special power off sequence needed.
 If the SilentStepStick is only powered with 5V then a current can flow backwards to VM. In this case no loads should be on VM (<=4V), because the current will be drawn from the logic supply.
 
-
 If the motor is running/moving, then it is not allowed to switch off the power supply. Always make sure that the motor stands still on shutting down, otherwise the TMC2xxx driver can get damaged.
 
 An **emergency stop** can be realized, when the EN/CFG6 pin is set to VIO (high). This will switch off all power drivers and will put the motor into freewheeling.
