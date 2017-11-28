@@ -2,7 +2,7 @@
 The Silent-Step-Stick is a Stepper Motor Driver Board for 2-Phase Motors based on a [Trinamic TMC 2100](http://www.trinamic.com/products/integrated-circuits/details/tmc2100/), [Trinamic TMC 2130](http://www.trinamic.com/products/integrated-circuits/details/tmc2130/) or [Trinamic TMC 2208](http://www.trinamic.com/products/integrated-circuits/details/tmc2208-la/).
 
 * Hardware compatible with [StepStick](http://reprap.org/wiki/StepStick) and [Pololu A4988](https://www.pololu.com/product/1182)
-* Components on bottom PCB side for better heat emission, further infos [here](https://github.com/watterott/SilentStepStick/blob/master/docs/FAQ.md#why-is-the-tmc2100-chip-on-the-bottom-pcb-side)
+* Components on bottom PCB side for better heat emission, further infos [here](https://github.com/watterott/SilentStepStick/blob/master/docs/FAQ.md#why-is-the-trinamic-driver-chip-on-the-bottom-pcb-side)
 * Trinamic stepper motor driver (chopper drive / constant current drive)
 * Automatic standby current reduction
 * **microPlyer** - microstep interpolator for increased smoothness of microstepping
@@ -58,9 +58,9 @@ _* without interpolation (microPlyer), ** further infos [here](https://github.co
 * Accessories
   * [SilentStepStick Protector (with flyback diodes)](http://www.watterott.com/en/SilentStepStick-Protector)
   * [SilentStepStick Tester/Programmer](http://www.watterott.com/en/SilentStepStick-Tester)
+  * [Suitable Heatsink 9x9mm](http://www.watterott.com/en/Heatsink-9-x-9-x-12)
   * [Suitable Heatsink 10x10mm](http://www.watterott.com/en/Pin-heatsink-square-ICK-S-10-x-10-x-125)
   * [Suitable Heatsink 10x6mm](http://www.watterott.com/en/Heatsink-for-DIL-IC-PLCC-und-SMD-10-x-6-mm)
-  * [Suitable Heatsink 8x6mm](http://www.watterott.com/en/Heatsinks-6-3x8mm)
 
 
 ## Hardware and Software
