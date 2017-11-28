@@ -98,6 +98,20 @@ On some stepper motor drivers the maximum current (e.g. A4988) is set via Vref a
 The Trinamic drivers have an automatic thermal shutdown (at about 150°C) if the chip gets to hot. But always ensure a good cooling of the drivers.
 
 
+## What power supply do I need?
+A power supply (```Psup```) with a few times higher voltage as the motor phase voltage and a current of roughly the power of the motor (```Pmot```) plus the mechanical output power (```Pout```) is at least needed.
+
+For example 3 stepper motors with 2 coils/phases and every phase has 3.3 Ohm with a 1.2A current rating and a voltage of 4V.
+
+```Pmot = 2 coils * 4V * 1.2A = 9.6W``` (standstill power without load)
+
+```Pout = 0.20Nm * (2pi * 1000rpm / 60) = 20.9W``` (mechanical power)
+
+```Psup = 3 * (Pmot + Pout) = 91.5W``` (electrical input power)
+
+At 24V this is a current of 3.8A (```I=91.5W/24V```).
+
+
 ## What to consider when turning the power supply on or off?
 
 ### SilentStepSticks with variable 3-5V logic voltage
