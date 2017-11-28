@@ -58,9 +58,9 @@ _* without interpolation (microPlyer), ** further infos [here](https://github.co
 * Accessories
   * [SilentStepStick Protector (with flyback diodes)](http://www.watterott.com/en/SilentStepStick-Protector)
   * [SilentStepStick Tester/Programmer](http://www.watterott.com/en/SilentStepStick-Tester)
+  * [Suitable Heatsink 9x9mm](http://www.watterott.com/en/Heatsink-9-x-9-x-12)
   * [Suitable Heatsink 10x10mm](http://www.watterott.com/en/Pin-heatsink-square-ICK-S-10-x-10-x-125)
   * [Suitable Heatsink 10x6mm](http://www.watterott.com/en/Heatsink-for-DIL-IC-PLCC-und-SMD-10-x-6-mm)
-  * [Suitable Heatsink 8x6mm](http://www.watterott.com/en/Heatsinks-6-3x8mm)
 
 
 ## Hardware and Software
