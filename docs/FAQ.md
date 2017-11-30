@@ -30,6 +30,7 @@ If you have not an original [RAMPS 1.4](http://reprap.org/wiki/RAMPS_1.4) or [RU
 
 ## Can I use a stepper motor with a lower voltage than the driver motor supply voltage?
 Yes, because the TMC2xxx drivers use a chopper drive circuit to generate a constant current in each winding (motor phase) rather than applying a constant voltage.
+The motor supply voltage has to be also a few times higher than the motor phase/coil voltage. Otherwise the torque at higher speeds can not be achieved.
 
 
 ## What is the difference between SilentStepSticks with 3-5V and 5V logic voltage?
@@ -99,7 +100,7 @@ The Trinamic drivers have an automatic thermal shutdown (at about 150°C) if the
 
 
 ## What power supply do I need?
-A power supply (```Psup```) with a few times higher voltage as the motor phase voltage and a current of roughly the power of the motor (```Pmot```) plus the mechanical output power (```Pout```) is at least needed.
+A power supply (```Psup```) with a few times higher voltage than the motor phase voltage and a current of roughly the power of the motor (```Pmot```) plus the mechanical output power (```Pout```) is at least needed.
 
 For example 3 stepper motors with 2 coils/phases and every phase has 3.3 Ohm with a 1.2A current rating and a voltage of 4V.
 
@@ -155,7 +156,7 @@ Here you can find an [Arduino example](https://github.com/watterott/SilentStepSt
 
 ## Is it possible to connect the CFG pins from different SilentStepSticks?
 It is possible to connect the CFG pins from two or more driver boards.
-However then the pin state can only be GND (low) or VIO (high). The open state (unconnected) is not possible in this configuration.
+However then the pin state can only be GND (low) or VIO (high). The open state (unconnected) on TMC21xx drivers is not possible in this configuration.
 
 
 ## Why is the Trinamic driver chip on the bottom PCB side?
