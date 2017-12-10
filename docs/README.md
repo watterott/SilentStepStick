@@ -71,15 +71,17 @@ _* without interpolation (microPlyer), ** further infos [here](https://github.co
 
 ## Reviews and Tests
 
-* TMC2100 Review from Thomas Sanladerer
+* Reviews from Thomas Sanladerer
 
-  [![SilentStepStick TMC2100 Review](http://img.youtube.com/vi/g6Bxoqr8QlY/0.jpg)](https://www.youtube.com/watch?v=g6Bxoqr8QlY)
+  [![SilentStepStick TMC2100](https://img.youtube.com/vi/g6Bxoqr8QlY/0.jpg)](https://www.youtube.com/watch?v=g6Bxoqr8QlY)
 
-  [![SilentStepStick TMC2100 Review Update](http://img.youtube.com/vi/mYuZqx8xwTg/0.jpg)](https://www.youtube.com/watch?v=mYuZqx8xwTg)
+  [![SilentStepStick TMC2100 Update](https://img.youtube.com/vi/mYuZqx8xwTg/0.jpg)](https://www.youtube.com/watch?v=mYuZqx8xwTg)
+
+  [![SilentStepStick TMC2130](https://img.youtube.com/vi/sPvTB3irCxQ/0.jpg)](https://www.youtube.com/watch?v=sPvTB3irCxQ)
 
 * TMC2100 Review from Peter Recktenwald
 
-  [![SilentStepStick TMC2100 Review](http://img.youtube.com/vi/P3ebhi-vZRY/0.jpg)](https://www.youtube.com/watch?v=P3ebhi-vZRY)
+  [![SilentStepStick TMC2100](https://img.youtube.com/vi/P3ebhi-vZRY/0.jpg)](https://www.youtube.com/watch?v=P3ebhi-vZRY)
 
 * TMC2130 Review from Moritz Walter
 
@@ -87,14 +89,14 @@ _* without interpolation (microPlyer), ** further infos [here](https://github.co
 
 * TMC2208 Review from Trinamic
 
-  [![SilentStepStick TMC2208 Review](http://img.youtube.com/vi/FvW93yCbqFE/0.jpg)](https://www.youtube.com/watch?v=FvW93yCbqFE)
+  [![SilentStepStick TMC2208](https://img.youtube.com/vi/FvW93yCbqFE/0.jpg)](https://www.youtube.com/watch?v=FvW93yCbqFE)
 
 * What is Trinamic spreadCycle and stealthChop?
 
-  [![Trinamic spreadCycle and stealthChop](http://img.youtube.com/vi/Q0sJlGh9WNY/0.jpg)](https://www.youtube.com/watch?v=Q0sJlGh9WNY)
+  [![Trinamic spreadCycle and stealthChop](https://img.youtube.com/vi/Q0sJlGh9WNY/0.jpg)](https://www.youtube.com/watch?v=Q0sJlGh9WNY)
 
 * What is Trinamic stallGuard and coolStep?
 
-  [![Trinamic stallGuard and coolStep](http://img.youtube.com/vi/Prw7wNa20Gk/0.jpg)](https://www.youtube.com/watch?v=Prw7wNa20Gk)
+  [![Trinamic stallGuard and coolStep](https://img.youtube.com/vi/Prw7wNa20Gk/0.jpg)](https://www.youtube.com/watch?v=Prw7wNa20Gk)
 
 * More Tests and Reviews on [YouTube](https://www.youtube.com/results?search_query=SilentStepStick)
