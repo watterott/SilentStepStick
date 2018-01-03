@@ -95,8 +95,9 @@ The maximum motor current is 1.77A RMS (0.11Ohm sense resistors).
 A voltage of 1.0V on Vref sets the motor current to 0.71A RMS.
 
 **Note:**
-On some stepper motor drivers the maximum current (e.g. A4988) is set via Vref and on others the RMS current (e.g. TMC2100).
-The Trinamic drivers have an automatic thermal shutdown (at about 150°C) if the chip gets to hot. But always ensure a good cooling of the drivers.
+* On some stepper motor drivers the maximum current (e.g. A4988) is set via Vref and on others the RMS current (e.g. TMC2100).
+* The Trinamic drivers have an **automatic thermal shutdown** (at about 150°C) if the chip gets to hot. But always ensure a good cooling of the drivers.
+* On 3D printers sometimes two stepper motors are used for the Z axis. A **series connection of the motors** is in most cases better than a parallel connection. Only for motors with a high phase voltage (>6V) a parallel connection should be used.
 
 
 ## What power supply do I need?
