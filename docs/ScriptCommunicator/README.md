@@ -8,6 +8,7 @@ To run the program:
 * Start the *TMC2208.scez* file with the ScriptCommunicator: ```ScriptCommunicator TMC2208.scez```
 * Choose the right serial port and click *Connect*
 * Modifications in the Configurator are directly transmitted
+* Note, if you enable the *spreadCycle* then *TOFF* can not be *0* (null).
 
 
 #### Hardware Connection
