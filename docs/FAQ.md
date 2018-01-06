@@ -16,7 +16,7 @@ or you can use the more powerful and louder **1/16 spreadCycle** mode (TMC2100: 
 Only applicable for SilentStepSticks with variable 3-5V logic voltage (VIO):
 If you use a control board with USB power supply (like Arduino + RAMPS) then always ensure that the motor voltage (VM) is present, when you connect the board via USB.
 Otherwise the TMC2xxx is not powered via the internal voltage regulator and a high current can flow into VIO or the IOs and this can damage the internal logic.
-As safety workaround you can disconnect the 5V signal in the USB cable, so that the board cannot be powered over USB.
+As safety workaround you can disconnect the 5V signal in the USB cable, so that the board cannot be powered over USB or you can add a schottky diode (1A 60V) from VIO (anode) to VM (cathode).
 
 #### RAMPS 1.4 and RUMBA Notes
 For most cases the **1/16 stealthChop** mode (TMC2100: CFG1=open CFG2=open, TMC2208: MS1=VIO MS2=VIO) is suitable and we recommend the TMC2100 SilentStepStick with 5V for RAMPS and RUMBA boards, because they use 5V logic.
@@ -118,6 +118,7 @@ At 24V this is a current of 3.8A (```I=91.5W/24V```).
 
 ### SilentStepSticks with variable 3-5V logic voltage
 At power-up the motor voltage VM should come up first and then the logic voltage VIO and on power-down the logic voltage VIO should turned off at first and then the motor voltage VM. Because the internal logic of the TMC2xxx driver is powered from VM.
+To ensure the correct powering a schottky diode from VIO (anode) to VM (cathode) can be added.
 
 ### SilentStepSticks with 5V logic voltage
 There is no special power-up or power-down sequence needed.
@@ -126,7 +127,7 @@ If the SilentStepStick is only powered with 5V (logic) then a current can flow b
 ### All SilentStepSticks
 Only after the logic voltage VIO is present and stable, the driver inputs (STEP, DIR, EN, CFG...) can be driven with a high level.
 
-A step pulse (moving) should only be done after the motor voltage VM is present and stable.
+The driver (motor outputs) shoud be only enabled after the motor voltage VM is present and stable.
 
 Because the motor voltage VM is a strong power supply with a high voltage, also ensure that there cannot occur voltage spikes on power up.
 See [Pololu: Understanding Destructive LC Voltage Spikes](https://www.pololu.com/docs/0J16/all).
