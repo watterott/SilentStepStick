@@ -71,7 +71,7 @@ _* without interpolation (microPlyer), ** further infos [here](https://github.co
 
 ## Reviews and Tests
 
-* Reviews from Thomas Sanladerer
+* TMC2100 and TMC2130 Reviews from Thomas Sanladerer
 
   [![SilentStepStick TMC2100](https://img.youtube.com/vi/g6Bxoqr8QlY/0.jpg)](https://www.youtube.com/watch?v=g6Bxoqr8QlY)
 
