@@ -8292,8 +8292,8 @@ TMC2130 - SPI for configuration&lt;br&gt;
 <wire x1="-0.35" y1="-0.6" x2="-0.35" y2="-0.2" width="0.127" layer="21"/>
 <wire x1="-0.35" y1="-0.2" x2="-0.35" y2="0.6" width="0.127" layer="21"/>
 <wire x1="-0.35" y1="0.6" x2="0.35" y2="0.6" width="0.127" layer="21"/>
-<smd name="C" x="0" y="0.4" dx="0.8" dy="0.5" layer="1" roundness="20"/>
-<smd name="A" x="0" y="-0.4" dx="0.8" dy="0.5" layer="1" roundness="20"/>
+<smd name="C" x="0" y="0.425" dx="0.8" dy="0.5" layer="1" roundness="20"/>
+<smd name="A" x="0" y="-0.425" dx="0.8" dy="0.5" layer="1" roundness="20"/>
 <text x="-1.27" y="0" size="0.8128" layer="25" font="vector" ratio="10" rot="R270" align="center">&gt;NAME</text>
 <text x="1.27" y="0" size="0.8128" layer="27" font="vector" ratio="10" rot="R270" align="center">&gt;VALUE</text>
 <rectangle x1="-0.079375" y1="0.020625" x2="0.079375" y2="0.620625" layer="21" rot="R270"/>
@@ -8302,18 +8302,38 @@ TMC2130 - SPI for configuration&lt;br&gt;
 <wire x1="-0.35" y1="-0.2" x2="0.35" y2="-0.2" width="0.127" layer="21"/>
 </package>
 <package name="SOD323">
-<wire x1="0.5" y1="1" x2="0.5" y2="-1.05" width="0.127" layer="21"/>
-<wire x1="0.5" y1="-1.05" x2="-0.5" y2="-1.05" width="0.127" layer="21"/>
-<wire x1="-0.5" y1="-1.05" x2="-0.5" y2="1" width="0.127" layer="21"/>
-<wire x1="-0.5" y1="1" x2="0.5" y2="1" width="0.127" layer="21"/>
-<smd name="C" x="0" y="1.05" dx="0.4" dy="1" layer="1" roundness="20"/>
-<smd name="A" x="0" y="-1.05" dx="0.4" dy="1" layer="1" roundness="20"/>
+<wire x1="0.6" y1="1" x2="0.6" y2="-1.05" width="0.127" layer="21"/>
+<wire x1="0.6" y1="-1.05" x2="-0.6" y2="-1.05" width="0.127" layer="21"/>
+<wire x1="-0.6" y1="-1.05" x2="-0.6" y2="1" width="0.127" layer="21"/>
+<wire x1="-0.6" y1="1" x2="0.6" y2="1" width="0.127" layer="21"/>
+<smd name="C" x="0" y="1.05" dx="0.5" dy="1" layer="1" roundness="20"/>
+<smd name="A" x="0" y="-1.05" dx="0.5" dy="1" layer="1" roundness="20"/>
 <text x="-1.27" y="0" size="0.8128" layer="25" font="vector" ratio="10" rot="R270" align="center">&gt;NAME</text>
 <text x="1.27" y="0" size="0.8128" layer="27" font="vector" ratio="10" rot="R270" align="center">&gt;VALUE</text>
 <rectangle x1="-0.125" y1="-0.08375" x2="0.125" y2="0.81625" layer="21" rot="R270"/>
 <wire x1="0.44125" y1="-0.3095" x2="0" y2="0.373" width="0.127" layer="21"/>
 <wire x1="0" y1="0.373" x2="-0.44125" y2="-0.3095" width="0.127" layer="21"/>
 <wire x1="-0.44125" y1="-0.3095" x2="0.44125" y2="-0.3095" width="0.127" layer="21"/>
+</package>
+<package name="SMC_Z5-T">
+<smd name="C" x="0" y="3.3" dx="5" dy="2" layer="1" roundness="20"/>
+<smd name="A" x="0" y="-1.268" dx="5" dy="6" layer="1" roundness="20"/>
+<wire x1="2.5" y1="4" x2="2.5" y2="2.1" width="0.127" layer="21"/>
+<wire x1="2.5" y1="2.1" x2="2.5" y2="2" width="0.127" layer="21"/>
+<wire x1="2.5" y1="2" x2="2.5" y2="-4" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="4" x2="-2.5" y2="2.1" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="2.1" x2="-2.5" y2="2" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="2" x2="-2.5" y2="-4" width="0.127" layer="21"/>
+<wire x1="2.5" y1="4" x2="-2.5" y2="4" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-4" x2="-2.5" y2="-4" width="0.127" layer="21"/>
+<text x="3.175" y="0" size="0.8128" layer="25" font="vector" ratio="10" rot="R270" align="center">&gt;NAME</text>
+<text x="-3.175" y="0" size="0.8128" layer="27" font="vector" rot="R90" align="center">&gt;VALUE</text>
+<wire x1="2.5" y1="2.1" x2="-2.5" y2="2.1" width="0.127" layer="21"/>
+<wire x1="2.5" y1="2" x2="-2.5" y2="2" width="0.127" layer="21"/>
+<wire x1="0.6" y1="-0.627" x2="0" y2="0.373" width="0.127" layer="21"/>
+<wire x1="0" y1="0.373" x2="-0.6" y2="-0.627" width="0.127" layer="21"/>
+<wire x1="-0.6" y1="-0.627" x2="0.6" y2="-0.627" width="0.127" layer="21"/>
+<rectangle x1="-0.3048" y1="-0.2286" x2="0.3048" y2="1.3462" layer="21" rot="R270"/>
 </package>
 </packages>
 <symbols>
@@ -8354,7 +8374,11 @@ TMC2130 - SPI for configuration&lt;br&gt;
 </symbols>
 <devicesets>
 <deviceset name="D_SCHOTTKY" prefix="D" uservalue="yes">
-<description>Schottky Diodes&lt;br&gt;</description>
+<description>Schottky Diodes&lt;br&gt;
+&lt;br&gt;
+1A, 30V - SOD323 (BAS3010 or CUS10S40)&lt;br&gt;
+2A, 30V - SMA/DO214AC&lt;br&gt;
+10A,45V - Z5-T (CDBZ5T1045)&lt;br&gt;</description>
 <gates>
 <gate name="D" symbol="DIODE_SCHOTTKY" x="0" y="0"/>
 </gates>
@@ -8450,6 +8474,15 @@ TMC2130 - SPI for configuration&lt;br&gt;
 </technologies>
 </device>
 <device name="-SOD323" package="SOD323">
+<connects>
+<connect gate="D" pin="A" pad="A"/>
+<connect gate="D" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-Z5-T" package="SMC_Z5-T">
 <connects>
 <connect gate="D" pin="A" pad="A"/>
 <connect gate="D" pin="C" pad="C"/>
@@ -8685,14 +8718,14 @@ TMC2130 - SPI for configuration&lt;br&gt;
 <part name="X2" library="SMD" deviceset="PASSER" device=""/>
 <part name="FRAME1" library="we-symbol" deviceset="FRAME-A4L" device=""/>
 <part name="IC1" library="we-board" deviceset="STEPSTICK" device="-TP"/>
-<part name="D1+" library="we-rcl" deviceset="D_SCHOTTKY" device="-SMA"/>
-<part name="D2+" library="we-rcl" deviceset="D_SCHOTTKY" device="-SMA"/>
-<part name="D3+" library="we-rcl" deviceset="D_SCHOTTKY" device="-SMA"/>
-<part name="D4+" library="we-rcl" deviceset="D_SCHOTTKY" device="-SMA"/>
-<part name="D1-" library="we-rcl" deviceset="D_SCHOTTKY" device="-SMA"/>
-<part name="D2-" library="we-rcl" deviceset="D_SCHOTTKY" device="-SMA"/>
-<part name="D3-" library="we-rcl" deviceset="D_SCHOTTKY" device="-SMA"/>
-<part name="D4-" library="we-rcl" deviceset="D_SCHOTTKY" device="-SMA"/>
+<part name="D1+" library="we-rcl" deviceset="D_SCHOTTKY" device="-SOD123" value="S310FA"/>
+<part name="D2+" library="we-rcl" deviceset="D_SCHOTTKY" device="-SOD123" value="S310FA"/>
+<part name="D3+" library="we-rcl" deviceset="D_SCHOTTKY" device="-SOD123" value="S310FA"/>
+<part name="D4+" library="we-rcl" deviceset="D_SCHOTTKY" device="-SOD123" value="S310FA"/>
+<part name="D1-" library="we-rcl" deviceset="D_SCHOTTKY" device="-SOD123" value="S310FA"/>
+<part name="D2-" library="we-rcl" deviceset="D_SCHOTTKY" device="-SOD123" value="S310FA"/>
+<part name="D3-" library="we-rcl" deviceset="D_SCHOTTKY" device="-SOD123" value="S310FA"/>
+<part name="D4-" library="we-rcl" deviceset="D_SCHOTTKY" device="-SOD123" value="S310FA"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="V+" device="" value="VM"/>
 <part name="P+2" library="supply1" deviceset="V+" device="" value="VM"/>
@@ -8710,7 +8743,7 @@ TMC2130 - SPI for configuration&lt;br&gt;
 <text x="162.56" y="19.05" size="1.27" layer="95">http://creativecommons.org/licenses/by-sa/4.0/</text>
 <text x="162.56" y="15.24" size="1.27" layer="95">Designed by Andreas Watterott (Watterott electronic)</text>
 <text x="162.56" y="83.82" size="1.778" layer="97" align="center">Schottky Diodes 2A/60V</text>
-<text x="83.82" y="93.98" size="1.778" layer="97" align="top-right">J1 enables spreadCycle on TMC2100.
+<text x="83.82" y="91.44" size="1.778" layer="97" align="top-right">J1 enables spreadCycle on TMC2100.
 
 1/16 stealthChop: CFG1=open CFG2=open CFG3=open
 1/16 spreadCycle: CFG1=GND CFG2=open CFG3=open</text>
