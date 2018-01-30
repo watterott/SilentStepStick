@@ -8,7 +8,8 @@ The Silent-Step-Stick is a Stepper Motor Driver Board for 2-Phase Motors based o
 * **stealthChop** - for quiet operation and smooth motion
 * **spreadCycle** - highly dynamic motor control chopper
 
-**[Documentation](http://learn.watterott.com/silentstepstick/)**
+
+## [Documentation](http://learn.watterott.com/silentstepstick/)
 
 
 ## Shop
