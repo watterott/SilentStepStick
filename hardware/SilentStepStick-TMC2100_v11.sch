@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="11" fill="1" visible="no" active="no"/>
@@ -15143,9 +15143,9 @@ stealthChop</text>
 <wire x1="59.055" y1="31.75" x2="60.325" y2="31.75" width="1.016" layer="94"/>
 <wire x1="59.055" y1="24.13" x2="60.325" y2="24.13" width="1.016" layer="94"/>
 <wire x1="16.51" y1="50.8" x2="16.51" y2="53.34" width="1.016" layer="94"/>
-<text x="21.59" y="49.53" size="1.778" layer="97" font="vector" ratio="10" align="top-left">TOFF=4</text>
-<text x="21.59" y="31.75" size="1.778" layer="97" font="vector" ratio="10" align="top-left">HEND=7</text>
-<text x="21.59" y="13.97" size="1.778" layer="97" font="vector" ratio="10" align="top-left">TBL=%01</text>
+<text x="21.59" y="49.53" size="1.778" layer="97" font="vector" ratio="10" align="top-left">TOFF=140tclk</text>
+<text x="21.59" y="31.75" size="1.778" layer="97" font="vector" ratio="10" align="top-left">HEND=5</text>
+<text x="21.59" y="13.97" size="1.778" layer="97" font="vector" ratio="10" align="top-left">TBL=24</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="118.11" y="109.22"/>

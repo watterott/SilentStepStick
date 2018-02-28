@@ -15385,9 +15385,9 @@ stealthChop</text>
 <wire x1="59.055" y1="31.75" x2="60.325" y2="31.75" width="1.016" layer="94"/>
 <wire x1="59.055" y1="24.13" x2="60.325" y2="24.13" width="1.016" layer="94"/>
 <wire x1="16.51" y1="50.8" x2="16.51" y2="53.34" width="1.016" layer="94"/>
-<text x="21.59" y="49.53" size="1.778" layer="97" font="vector" ratio="10" align="top-left">TOFF=4</text>
-<text x="21.59" y="31.75" size="1.778" layer="97" font="vector" ratio="10" align="top-left">HEND=7</text>
-<text x="21.59" y="13.97" size="1.778" layer="97" font="vector" ratio="10" align="top-left">TBL=%01</text>
+<text x="21.59" y="49.53" size="1.778" layer="97" font="vector" ratio="10" align="top-left">TOFF=140tclk</text>
+<text x="21.59" y="31.75" size="1.778" layer="97" font="vector" ratio="10" align="top-left">HEND=5</text>
+<text x="21.59" y="13.97" size="1.778" layer="97" font="vector" ratio="10" align="top-left">TBL=24</text>
 </plain>
 <instances>
 <instance part="JP1" gate="A" x="207.01" y="143.51" smashed="yes" rot="R180">

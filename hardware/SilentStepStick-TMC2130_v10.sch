@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="11" fill="1" visible="no" active="no"/>
@@ -15339,8 +15339,8 @@ spreadCycle
 stealthChop
 stealthChop</text>
 <text x="90.17" y="57.15" size="2.1844" layer="97" font="vector" ratio="10" align="top-left">Standalone Operation (SPI_MODE=GND)</text>
-<text x="43.18" y="39.37" size="1.778" layer="97" font="vector" ratio="10" align="top-left">HEND=7</text>
-<text x="43.18" y="21.59" size="1.778" layer="97" font="vector" ratio="10" align="top-left">TBL=%01</text>
+<text x="43.18" y="39.37" size="1.778" layer="97" font="vector" ratio="10" align="top-left">HEND=5</text>
+<text x="43.18" y="21.59" size="1.778" layer="97" font="vector" ratio="10" align="top-left">TBL=24</text>
 </plain>
 <instances>
 <instance part="JP1" gate="A" x="207.01" y="143.51" smashed="yes" rot="R180">
