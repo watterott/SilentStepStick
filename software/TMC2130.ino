@@ -3,6 +3,7 @@
   
   Other examples/libraries can be found here:
   https://github.com/teemuatlut/TMC2130Stepper
+  https://github.com/janelia-arduino/TMC2130
   https://github.com/makertum/Trinamic_TMC2130
 */
 
