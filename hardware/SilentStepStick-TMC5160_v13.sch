@@ -7793,12 +7793,12 @@ HW</text>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="C7" library="rcl" deviceset="C-EU" device="C0402" value="100nF"/>
-<part name="C9" library="rcl" deviceset="C-EU" device="C0805" value="10uF/36V"/>
-<part name="C10" library="rcl" deviceset="C-EU" device="C0805" value="10uF/36V"/>
+<part name="C9" library="rcl" deviceset="C-EU" device="C0805" value="10uF/35V"/>
+<part name="C10" library="rcl" deviceset="C-EU" device="C0805" value="10uF/35V"/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
-<part name="C15" library="rcl" deviceset="C-EU" device="C0402" value="470nF/36V"/>
+<part name="C15" library="rcl" deviceset="C-EU" device="C0402" value="470nF/35V"/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="IC2" library="Fairchild_By_element14_Batch_1" deviceset="FDMC8030" device="" value="FDMC8030"/>
 <part name="IC3" library="Fairchild_By_element14_Batch_1" deviceset="FDMC8030" device="" value="FDMC8030"/>
@@ -7810,7 +7810,7 @@ HW</text>
 <part name="R8" library="rcl" deviceset="R-EU_" device="R0402" value="47R"/>
 <part name="IC4" library="Fairchild_By_element14_Batch_1" deviceset="FDMC8030" device="" value="FDMC8030"/>
 <part name="IC5" library="Fairchild_By_element14_Batch_1" deviceset="FDMC8030" device="" value="FDMC8030"/>
-<part name="C16" library="rcl" deviceset="C-EU" device="C0402" value="470nF/36V"/>
+<part name="C16" library="rcl" deviceset="C-EU" device="C0402" value="470nF/35V"/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
 <part name="C13" library="rcl" deviceset="C-EU" device="C0402" value="100nF"/>
 <part name="C14" library="rcl" deviceset="C-EU" device="C0402" value="100nF"/>

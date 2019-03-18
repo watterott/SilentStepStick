@@ -1880,7 +1880,7 @@ Your Eurocircuits Team
 <attribute name="VALUE" x="2.925" y="8.985" size="0.4064" layer="27" font="vector" rot="R90"/>
 <attribute name="NAME" x="2.485" y="8.185" size="0.4064" layer="25" font="vector" rot="R90"/>
 </element>
-<element name="C10" library="rcl" package="C0805" value="10uF/36V" x="11.48" y="2.02" smashed="yes" rot="R90">
+<element name="C10" library="rcl" package="C0805" value="10uF/35V" x="11.48" y="2.02" smashed="yes" rot="R90">
 <attribute name="NAME" x="11.95" y="0.31" size="0.4064" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="12.72" y="0.45" size="0.4064" layer="27" font="vector" rot="R90"/>
 </element>
@@ -1901,12 +1901,12 @@ Your Eurocircuits Team
 <attribute name="NAME" x="10.735" y="13.255" size="0.4064" layer="26" font="vector" rot="MR180"/>
 <attribute name="VALUE" x="10.265" y="10.895" size="0.4064" layer="28" font="vector" rot="MR90"/>
 </element>
-<element name="C15" library="rcl" package="C0402" value="470nF/36V" x="12.56" y="2.44" smashed="yes" rot="MR270">
+<element name="C15" library="rcl" package="C0402" value="470nF/35V" x="12.56" y="2.44" smashed="yes" rot="MR270">
 <attribute name="NAME" x="13.045" y="3.505" size="0.4064" layer="26" font="vector" rot="MR0"/>
 <attribute name="VALUE" x="13.565" y="4.275" size="0.4064" layer="28" font="vector" rot="MR270"/>
 <attribute name="NAME" x="11.925" y="3.075" size="0.4064" layer="26" font="vector" rot="MR270"/>
 </element>
-<element name="C16" library="rcl" package="C0402" value="470nF/36V" x="8.45" y="16.51" smashed="yes" rot="R270">
+<element name="C16" library="rcl" package="C0402" value="470nF/35V" x="8.45" y="16.51" smashed="yes" rot="R270">
 <attribute name="VALUE" x="8.255" y="18.545" size="0.4064" layer="27" font="vector"/>
 <attribute name="NAME" x="8.155" y="17.785" size="0.4064" layer="25" font="vector"/>
 </element>
@@ -1935,7 +1935,7 @@ Your Eurocircuits Team
 <attribute name="NAME" x="3.845" y="2.595" size="0.4064" layer="25" font="vector"/>
 <attribute name="VALUE" x="3.045" y="3.155" size="0.4064" layer="27" font="vector"/>
 </element>
-<element name="C9" library="rcl" package="C0805" value="10uF/36V" x="9.83" y="2.02" smashed="yes" rot="R90">
+<element name="C9" library="rcl" package="C0805" value="10uF/35V" x="9.83" y="2.02" smashed="yes" rot="R90">
 <attribute name="NAME" x="10.15" y="0.26" size="0.4064" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="8.97" y="0.45" size="0.4064" layer="27" font="vector" rot="R90"/>
 </element>
