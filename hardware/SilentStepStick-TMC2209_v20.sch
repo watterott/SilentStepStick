@@ -7956,7 +7956,7 @@ Stepper Motor Driver (5V...28V, 1.8A RMS, 256 microsteps)</description>
 <part name="J3" library="we-con" deviceset="MA02-1" device=""/>
 <part name="REF" library="we-rcl" deviceset="PAD" device="-0.6-1.1" value="PAD-0.6-1.1"/>
 <part name="C7B" library="rcl" deviceset="C-EU" device="C1206" value="10u/35V"/>
-<part name="IC2" library="we-chip" deviceset="TMC2209" device="-LA"/>
+<part name="IC1" library="we-chip" deviceset="TMC2209" device="-LA"/>
 <part name="J1" library="we-con" deviceset="MA08-1" device=""/>
 <part name="C8" library="rcl" deviceset="C-EU" device="C1206" value="10u/35V"/>
 </parts>
@@ -8070,7 +8070,7 @@ Yes to 256</text>
 <attribute name="NAME" x="152.4" y="151.13" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="152.4" y="156.21" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="IC2" gate="IC" x="105.41" y="118.11"/>
+<instance part="IC1" gate="IC" x="105.41" y="118.11"/>
 <instance part="J1" gate="J" x="189.23" y="142.24"/>
 <instance part="C8" gate="G$1" x="162.56" y="153.67" smashed="yes" rot="R180">
 <attribute name="NAME" x="160.02" y="151.13" size="1.778" layer="95" rot="R90"/>
@@ -8088,7 +8088,7 @@ Yes to 256</text>
 </segment>
 <segment>
 <label x="69.85" y="115.57" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="IC2" gate="IC" pin="DIAG"/>
+<pinref part="IC1" gate="IC" pin="DIAG"/>
 <wire x1="85.09" y1="115.57" x2="69.85" y2="115.57" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -8100,7 +8100,7 @@ Yes to 256</text>
 </segment>
 <segment>
 <label x="69.85" y="113.03" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="IC2" gate="IC" pin="INDEX"/>
+<pinref part="IC1" gate="IC" pin="INDEX"/>
 <wire x1="85.09" y1="113.03" x2="69.85" y2="113.03" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -8112,7 +8112,7 @@ Yes to 256</text>
 </segment>
 <segment>
 <label x="69.85" y="123.19" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="IC2" gate="IC" pin="STEP"/>
+<pinref part="IC1" gate="IC" pin="STEP"/>
 <wire x1="85.09" y1="123.19" x2="69.85" y2="123.19" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -8124,7 +8124,7 @@ Yes to 256</text>
 </segment>
 <segment>
 <label x="69.85" y="120.65" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="IC2" gate="IC" pin="DIR"/>
+<pinref part="IC1" gate="IC" pin="DIR"/>
 <wire x1="85.09" y1="120.65" x2="69.85" y2="120.65" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -8151,7 +8151,7 @@ Yes to 256</text>
 <pinref part="C7B" gate="G$1" pin="1"/>
 <junction x="154.94" y="151.13"/>
 <wire x1="154.94" y1="151.13" x2="147.32" y2="151.13" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="IC" pin="VS"/>
+<pinref part="IC1" gate="IC" pin="VS"/>
 <pinref part="C8" gate="G$1" pin="1"/>
 <wire x1="162.56" y1="151.13" x2="154.94" y2="151.13" width="0.1524" layer="91"/>
 <junction x="154.94" y="151.13"/>
@@ -8214,9 +8214,9 @@ Yes to 256</text>
 <pinref part="GND11" gate="1" pin="GND"/>
 <wire x1="44.45" y1="135.89" x2="44.45" y2="138.43" width="0.1524" layer="91"/>
 <junction x="44.45" y="138.43"/>
-<pinref part="IC2" gate="IC" pin="GND"/>
+<pinref part="IC1" gate="IC" pin="GND"/>
 <junction x="85.09" y="138.43"/>
-<pinref part="IC2" gate="IC" pin="STDBY"/>
+<pinref part="IC1" gate="IC" pin="STDBY"/>
 <wire x1="85.09" y1="133.35" x2="85.09" y2="138.43" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -8227,7 +8227,7 @@ Yes to 256</text>
 <pinref part="R1" gate="R" pin="1"/>
 <junction x="50.8" y="95.25"/>
 <wire x1="50.8" y1="97.79" x2="85.09" y2="97.79" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="IC" pin="CLK"/>
+<pinref part="IC1" gate="IC" pin="CLK"/>
 </segment>
 <segment>
 <pinref part="C5" gate="C" pin="2"/>
@@ -8238,7 +8238,7 @@ Yes to 256</text>
 <net name="OA1" class="0">
 <segment>
 <label x="133.35" y="118.11" size="1.27" layer="95" xref="yes"/>
-<pinref part="IC2" gate="IC" pin="OA1"/>
+<pinref part="IC1" gate="IC" pin="OA1"/>
 <wire x1="125.73" y1="118.11" x2="133.35" y2="118.11" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -8250,7 +8250,7 @@ Yes to 256</text>
 <net name="OA2" class="0">
 <segment>
 <label x="133.35" y="113.03" size="1.27" layer="95" xref="yes"/>
-<pinref part="IC2" gate="IC" pin="OA2"/>
+<pinref part="IC1" gate="IC" pin="OA2"/>
 <wire x1="125.73" y1="113.03" x2="133.35" y2="113.03" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -8262,7 +8262,7 @@ Yes to 256</text>
 <net name="OB2" class="0">
 <segment>
 <label x="133.35" y="102.87" size="1.27" layer="95" xref="yes"/>
-<pinref part="IC2" gate="IC" pin="OB2"/>
+<pinref part="IC1" gate="IC" pin="OB2"/>
 <wire x1="125.73" y1="102.87" x2="133.35" y2="102.87" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -8274,7 +8274,7 @@ Yes to 256</text>
 <net name="OB1" class="0">
 <segment>
 <label x="133.35" y="107.95" size="1.27" layer="95" xref="yes"/>
-<pinref part="IC2" gate="IC" pin="OB1"/>
+<pinref part="IC1" gate="IC" pin="OB1"/>
 <wire x1="125.73" y1="107.95" x2="133.35" y2="107.95" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -8301,20 +8301,20 @@ Yes to 256</text>
 <wire x1="55.88" y1="148.59" x2="31.75" y2="148.59" width="0.1524" layer="91"/>
 <junction x="55.88" y="148.59"/>
 <junction x="31.75" y="148.59"/>
-<pinref part="IC2" gate="IC" pin="VCC_IO"/>
+<pinref part="IC1" gate="IC" pin="VCC_IO"/>
 </segment>
 </net>
 <net name="VCP" class="0">
 <segment>
 <pinref part="C6" gate="C" pin="2"/>
-<pinref part="IC2" gate="IC" pin="VCP"/>
+<pinref part="IC1" gate="IC" pin="VCP"/>
 <wire x1="125.73" y1="138.43" x2="138.43" y2="138.43" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CPI" class="0">
 <segment>
 <pinref part="C4" gate="C" pin="2"/>
-<pinref part="IC2" gate="IC" pin="CPI"/>
+<pinref part="IC1" gate="IC" pin="CPI"/>
 <wire x1="125.73" y1="133.35" x2="130.81" y2="133.35" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -8324,7 +8324,7 @@ Yes to 256</text>
 <wire x1="140.97" y1="128.27" x2="140.97" y2="133.35" width="0.1524" layer="91"/>
 <wire x1="140.97" y1="133.35" x2="135.89" y2="133.35" width="0.1524" layer="91"/>
 <pinref part="C4" gate="C" pin="1"/>
-<pinref part="IC2" gate="IC" pin="CPO"/>
+<pinref part="IC1" gate="IC" pin="CPO"/>
 </segment>
 </net>
 <net name="BRA" class="0">
@@ -8332,7 +8332,7 @@ Yes to 256</text>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="125.73" y1="92.71" x2="140.97" y2="92.71" width="0.1524" layer="91"/>
 <wire x1="140.97" y1="92.71" x2="140.97" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="IC" pin="BRA"/>
+<pinref part="IC1" gate="IC" pin="BRA"/>
 </segment>
 </net>
 <net name="BRB" class="0">
@@ -8340,7 +8340,7 @@ Yes to 256</text>
 <wire x1="125.73" y1="87.63" x2="132.08" y2="87.63" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="87.63" x2="132.08" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="2"/>
-<pinref part="IC2" gate="IC" pin="BRB"/>
+<pinref part="IC1" gate="IC" pin="BRB"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -8350,7 +8350,7 @@ Yes to 256</text>
 <pinref part="P+1" gate="1" pin="+5V"/>
 <wire x1="44.45" y1="143.51" x2="44.45" y2="161.29" width="0.1524" layer="91"/>
 <pinref part="C2" gate="C" pin="2"/>
-<pinref part="IC2" gate="IC" pin="5VOUT"/>
+<pinref part="IC1" gate="IC" pin="5VOUT"/>
 </segment>
 <segment>
 <pinref part="P+2" gate="1" pin="+5V"/>
@@ -8365,7 +8365,7 @@ Yes to 256</text>
 <wire x1="73.66" y1="87.63" x2="64.77" y2="87.63" width="0.1524" layer="91"/>
 <label x="64.77" y="87.63" size="1.27" layer="95" rot="R180" xref="yes"/>
 <junction x="73.66" y="87.63"/>
-<pinref part="IC2" gate="IC" pin="VREF"/>
+<pinref part="IC1" gate="IC" pin="VREF"/>
 <wire x1="85.09" y1="87.63" x2="73.66" y2="87.63" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -8382,7 +8382,7 @@ Yes to 256</text>
 </segment>
 <segment>
 <label x="69.85" y="105.41" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="IC2" gate="IC" pin="MS1"/>
+<pinref part="IC1" gate="IC" pin="MS1"/>
 <wire x1="85.09" y1="105.41" x2="69.85" y2="105.41" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -8394,7 +8394,7 @@ Yes to 256</text>
 </segment>
 <segment>
 <label x="69.85" y="102.87" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="IC2" gate="IC" pin="MS2"/>
+<pinref part="IC1" gate="IC" pin="MS2"/>
 <wire x1="85.09" y1="102.87" x2="69.85" y2="102.87" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -8410,7 +8410,7 @@ Yes to 256</text>
 <pinref part="R1" gate="R" pin="2"/>
 <wire x1="68.58" y1="92.71" x2="85.09" y2="92.71" width="0.1524" layer="91"/>
 <label x="73.66" y="92.71" size="1.27" layer="95"/>
-<pinref part="IC2" gate="IC" pin="PDN_UART"/>
+<pinref part="IC1" gate="IC" pin="PDN_UART"/>
 </segment>
 <segment>
 <label x="226.06" y="147.32" size="1.27" layer="95" xref="yes"/>
@@ -8422,7 +8422,7 @@ Yes to 256</text>
 <segment>
 <pinref part="R2" gate="R" pin="2"/>
 <label x="73.66" y="128.27" size="1.27" layer="95"/>
-<pinref part="IC2" gate="IC" pin="ENN"/>
+<pinref part="IC1" gate="IC" pin="ENN"/>
 <wire x1="68.58" y1="128.27" x2="85.09" y2="128.27" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -8442,7 +8442,7 @@ Yes to 256</text>
 </net>
 <net name="SPREAD" class="0">
 <segment>
-<pinref part="IC2" gate="IC" pin="SPREAD"/>
+<pinref part="IC1" gate="IC" pin="SPREAD"/>
 <wire x1="85.09" y1="107.95" x2="69.85" y2="107.95" width="0.1524" layer="91"/>
 <label x="69.85" y="107.95" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
