@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MainConfig version="04.18">
+  <serialPortSetting baudRate="115200" dataBits="8" flowControl="None" name="" parity="None" setDTR="1" setRTS="1" stopBits="1"/>
+  <scriptWindow scriptConfigFileName="TMC220X_scripts.xml"/>
+</MainConfig>

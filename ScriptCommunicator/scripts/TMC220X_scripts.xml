@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScriptConfig>
+  <fileInfo version="04.18"/>
+  <script name="TMC220X" status="not running" path="TMC220X.js" ui="TMC220X.ui"/>
+</ScriptConfig>
