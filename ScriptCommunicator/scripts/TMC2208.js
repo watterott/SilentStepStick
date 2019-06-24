@@ -1053,7 +1053,7 @@ UI_PWM_OFS_spinBox.valueChangedSignal.connect(UI_PWM_OFS_spinBoxValueChanged);
 UI_PWM_GRAD_spinBox.valueChangedSignal.connect(UI_PWM_GRAD_spinBoxValueChanged);
 
 // DRV Status polling
-UI_DRV_STATUS_polling_checkBox.clickedSignal.connect(UI_DRV_STATUS_Polling_checkBox_Clicked)
+UI_DRV_STATUS_polling_checkBox.clickedSignal.connect(UI_DRV_STATUS_Polling_checkBox_Clicked);
 
 // TSTEP recording
 var plotWindow = scriptThread.createPlotWindow();
@@ -1066,7 +1066,7 @@ plotWindow.showHelperElements(true, true, true, true, true, true, true);
 
 UI_RecordingShow_pushButton.clickedSignal.connect(TSTEP_showGraph);
 UI_RecordingStart_pushButton.clickedSignal.connect(TSTEP_startRecording);
-plotWindow.clearButtonPressedSignal.connect(clearButtonPressed)
+plotWindow.clearButtonPressedSignal.connect(clearButtonPressed);
 
 // OPT Programmer
 UI_OTPBYTE_spinBox.valueChangedSignal.connect(UI_OTPBYTE_spinBoxValueChanged);

@@ -17,7 +17,7 @@
    </sizepolicy>
   </property>
   <property name="windowTitle">
-   <string>SilentStepStick-TMC2208 Configurator v1.0 (www.watterott.com)</string>
+   <string>SilentStepStick TMC2208 Configurator (www.watterott.com)</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <property name="sizeConstraint">
