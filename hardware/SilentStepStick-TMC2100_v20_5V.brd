@@ -109,7 +109,7 @@
 <text x="12.9" y="5.842" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">M2B</text>
 <text x="12.9" y="3.302" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">GND</text>
 <text x="12.962" y="0.689" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">VM</text>
-<wire x1="2.54" y1="3.81" x2="3.302" y2="3.81" width="0.16" layer="22"/>
+<wire x1="2.3495" y1="3.81" x2="3.302" y2="3.81" width="0.16" layer="22"/>
 <wire x1="3.302" y1="3.81" x2="3.556" y2="4.064" width="0.16" layer="22"/>
 <wire x1="2.286" y1="1.27" x2="2.54" y2="1.524" width="0.16" layer="22"/>
 <wire x1="2.54" y1="1.524" x2="2.54" y2="2.032" width="0.16" layer="22"/>
@@ -117,7 +117,10 @@
 <text x="3.048" y="20.146" size="0.6858" layer="22" font="vector" ratio="15" rot="MR180">www.watterott.com</text>
 <text x="8.5725" y="14.224" size="1.4224" layer="22" font="vector" ratio="15" rot="MR0">TOP</text>
 <text x="0" y="-5.08" size="1.27" layer="49" font="vector" ratio="10" align="top-left">Silkscreen: 22 bPlace</text>
-<text x="6.268" y="3.556" size="1" layer="22" font="vector" ratio="15" rot="MR90">TMC2100</text>
+<text x="6.2045" y="3.81" size="1" layer="22" font="vector" ratio="15" rot="MR90">TMC2100</text>
+<text x="6.4545" y="3.556" size="0.8128" layer="22" font="vector" ratio="15" rot="MR180">Vref</text>
+<wire x1="5.9055" y1="2.921" x2="6.1595" y2="3.175" width="0.16" layer="22"/>
+<wire x1="6.1595" y1="3.175" x2="6.4135" y2="3.175" width="0.16" layer="22"/>
 </plain>
 <libraries>
 <library name="rcl">
