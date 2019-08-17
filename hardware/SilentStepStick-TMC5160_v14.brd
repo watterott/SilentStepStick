@@ -2513,7 +2513,7 @@ Your Eurocircuits Team
 <wire x1="6.7" y1="5.55" x2="6.7" y2="5.1143" width="0.2" layer="1"/>
 <wire x1="6.9416" y1="5.0227" x2="6.7" y2="5.1143" width="0.2" layer="1"/>
 </signal>
-<signal name="N$3">
+<signal name="12VOUT">
 <contactref element="IC1" pad="4"/>
 <contactref element="C3" pad="2"/>
 <wire x1="8.87" y1="14.085" x2="8.87" y2="14.43" width="0.2" layer="1"/>
@@ -2945,7 +2945,7 @@ Your Eurocircuits Team
 <wire x1="4.87" y1="5.952975" x2="4.1842" y2="5.267175" width="0.1524" layer="1"/>
 <wire x1="4.87" y1="5.952975" x2="4.87" y2="6.235" width="0.1524" layer="1"/>
 </signal>
-<signal name="N$41">
+<signal name="DCEN">
 <contactref element="IC1" pad="23"/>
 <contactref element="DCEN" pad="2"/>
 <wire x1="3.695" y1="7.91" x2="3.6315" y2="7.9735" width="0.15" layer="1"/>
@@ -2977,7 +2977,7 @@ Your Eurocircuits Team
 <wire x1="4.3307" y1="12.1285" x2="2.5092" y2="13.95" width="0.2" layer="4"/>
 <wire x1="2.5092" y1="13.95" x2="1.27" y2="13.95" width="0.2" layer="4"/>
 </signal>
-<signal name="N$11">
+<signal name="SD_MODE">
 <contactref element="IC1" pad="21"/>
 <contactref element="SD_MODE" pad="2"/>
 <wire x1="3.695" y1="8.91" x2="3.5712" y2="8.7862" width="0.1524" layer="1"/>
@@ -2998,7 +2998,7 @@ Your Eurocircuits Team
 <wire x1="2.2582" y1="4.19933125" x2="2.2582" y2="4.1973" width="0.1524" layer="1"/>
 <wire x1="2.2582" y1="4.1973" x2="2.7305" y2="3.725" width="0.1524" layer="1"/>
 </signal>
-<signal name="N$44">
+<signal name="SPI_MODE">
 <contactref element="IC1" pad="22"/>
 <wire x1="3.655" y1="8.45" x2="3.695" y2="8.41" width="0.2" layer="1"/>
 <contactref element="SPI_MODE" pad="2"/>

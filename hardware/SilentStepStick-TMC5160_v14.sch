@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="11" fill="1" visible="no" active="no"/>
@@ -9118,7 +9118,7 @@ HV-Version
 <wire x1="130.81" y1="219.71" x2="133.35" y2="219.71" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="12VOUT" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="12VOUT"/>
 <pinref part="C3" gate="C" pin="2"/>
@@ -9390,7 +9390,7 @@ HV-Version
 <label x="39.37" y="115.57" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$41" class="0">
+<net name="DCEN" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="ENCB_DCEN_CFG4"/>
 <wire x1="113.03" y1="125.73" x2="92.71" y2="125.73" width="0.1524" layer="91"/>
@@ -9416,14 +9416,14 @@ HV-Version
 <label x="39.37" y="140.97" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="SD_MODE" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="SD_MODE"/>
 <wire x1="113.03" y1="115.57" x2="104.14" y2="115.57" width="0.1524" layer="91"/>
 <pinref part="SD_MODE" gate="J" pin="2"/>
 </segment>
 </net>
-<net name="N$44" class="0">
+<net name="SPI_MODE" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="SPI_MODE"/>
 <wire x1="104.14" y1="110.49" x2="113.03" y2="110.49" width="0.1524" layer="91"/>
