@@ -8007,8 +8007,8 @@ VIO</text>
 <text x="132.08" y="60.96" size="1.778" layer="95" font="vector" ratio="10" align="top-left">Steps
 
 8
-2
-4
+32
+64
 16
 </text>
 <text x="144.78" y="60.96" size="1.778" layer="95" font="vector" ratio="10" align="top-left">Interpolation
