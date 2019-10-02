@@ -71,7 +71,7 @@ function waitReceived()
 		timeout--;
 		if(timeout <= 0)
 		{
-			scriptThread.messageBox("Critical", "Error", "Sending failed. Check if ScriptCommunicator is connected.");
+			scriptThread.messageBox("Critical", "Error", "Sending failed. Check hardware connection and serial port.");
 			return false;
 		}
 	}
@@ -284,7 +284,7 @@ function readRegister(addr)
 	
 	if(bytesSend != datagram.length) 
 	{
-		scriptThread.messageBox("Critical", "Error", "Sending failed. Check if ScriptCommunicator is connected.");
+		scriptThread.messageBox("Critical", "Error", "Sending failed. Check hardware connection and serial port.");
 		return false;
 	}
 	packetsSend++;
@@ -307,7 +307,7 @@ function writeRegister(addr, value32)
 	
 	if(bytesSend != datagram.length) 
 	{
-		scriptThread.messageBox("Critical", "Error", "Sending failed. Check if ScriptCommunicator is connected.");
+		scriptThread.messageBox("Critical", "Error", "Sending failed. Check hardware connection and serial port.");
 		return false;
 	}
 	packetsSend++;

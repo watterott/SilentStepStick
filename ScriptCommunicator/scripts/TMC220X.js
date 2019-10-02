@@ -54,7 +54,7 @@ function connectButtonClicked() {
                 return; // connection successful
             }
         } else {
-            scriptThread.messageBox("Critical", "Error", "Could not open serial port!");
+            scriptThread.messageBox("Critical", "Error", "Could not open serial port.");
         }
     }
 
@@ -79,7 +79,7 @@ function waitReceived() {
         scriptThread.sleepFromScript(10);
         timeout -= 1;
         if (timeout <= 0) {
-            scriptThread.messageBox("Critical", "Error", "Sending failed. Check if ScriptCommunicator is connected.");
+            scriptThread.messageBox("Critical", "Error", "Sending failed. Check hardware connection and serial port.");
             return false;
         }
     }
@@ -258,7 +258,7 @@ function readRegister(addr) {
     scriptThread.sleepFromScript(anticollisionTime);
 
     if (bytesSend != datagram.length) {
-        scriptThread.messageBox("Critical", "Error", "Sending failed. Check if ScriptCommunicator is connected.");
+        scriptThread.messageBox("Critical", "Error", "Sending failed. Check hardware connection and serial port.");
         return false;
     }
     packetsSend++;
@@ -279,7 +279,7 @@ function writeRegister(addr, value32) {
     scriptThread.sleepFromScript(anticollisionTime);
 
     if (bytesSend != datagram.length) {
-        scriptThread.messageBox("Critical", "Error", "Sending failed. Check if ScriptCommunicator is connected.");
+        scriptThread.messageBox("Critical", "Error", "Sending failed. Check hardware connection and serial port.");
         return false;
     }
     packetsSend++;
