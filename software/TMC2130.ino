@@ -8,7 +8,7 @@
   https://github.com/makertum/Trinamic_TMC2130
 */
 
-#include "SPI.h"
+#include <SPI.h>
 
 // Note: You also have to connect GND, 5V/VIO and VM.
 //       A connection diagram can be found in the schematics.
@@ -16,7 +16,7 @@
 #define DIR_PIN   8 //direction
 #define STEP_PIN  9 //step
 
-#define CS_PIN   10 //chip select
+#define CS_PIN   10 //CS chip select
 #define MOSI_PIN 11 //SDI/MOSI (ICSP: 4, Uno: 11, Mega: 51)
 #define MISO_PIN 12 //SDO/MISO (ICSP: 1, Uno: 12, Mega: 50)
 #define SCK_PIN  13 //CLK/SCK  (ICSP: 3, Uno: 13, Mega: 52)
@@ -115,7 +115,7 @@ void setup()
   //tmc_write(WRITE_FLAG|REG_CHOPCONF,   0x07008008UL); //  2 microsteps, MRES=0, TBL=1=24, TOFF=8
   //tmc_write(WRITE_FLAG|REG_CHOPCONF,   0x08008008UL); //  1 microsteps, MRES=0, TBL=1=24, TOFF=8
 
-  //TMC2130 outputs on (LOW active)
+  //outputs on (LOW active)
   digitalWrite(EN_PIN, LOW);
 }
 
