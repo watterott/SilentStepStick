@@ -1,8 +1,9 @@
 /*
-  Trinamic TMC2208 Example
+  Trinamic TMC2208/TMC2209 Example
   
   Other examples/libraries can be found here:
-  https://github.com/teemuatlut/TMC2208Stepper
+  https://github.com/teemuatlut/TMCStepper
+  https://github.com/trinamic/TMC-API
   https://github.com/manoukianv/TMC2208Pilot
 */
 
