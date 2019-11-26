@@ -9,7 +9,7 @@
 
 // Note: You also have to connect GND, 5V/VIO and VM.
 //       A connection diagram can be found in the schematics.
-#define EN_PIN    7 //enable (CFG6)
+#define EN_PIN    7 //enable
 #define DIR_PIN   8 //direction
 #define STEP_PIN  9 //step
 
