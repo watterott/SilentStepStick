@@ -1,5 +1,8 @@
 /*
-  Trinamic TMC2100 Example
+  SilentStepStick TMC2100 Example
+
+  Example source code free to use.
+  Further information: https://learn.watterott.com/license/
 */
 
 // Note: You also have to connect GND, 5V/VIO and VM.

@@ -1,8 +1,11 @@
 /*
-  Trinamic TMC5160 Example
+  SilentStepStick TMC5160 Example
   
   TMCStepper library required:
   https://github.com/teemuatlut/TMCStepper
+
+  Example source code free to use.
+  Further information: https://learn.watterott.com/license/
 */
 
 #include <TMCStepper.h>
