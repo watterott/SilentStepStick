@@ -1,6 +1,7 @@
 /*
   SilentStepStick TMC2208/TMC2209 Example
-  
+  Rsense: 0.11 Ohm
+
   Other examples/libraries can be found here:
   https://github.com/teemuatlut/TMCStepper
   https://github.com/trinamic/TMC-API

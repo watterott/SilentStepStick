@@ -1,5 +1,6 @@
 /*
   SilentStepStick TMC5160 Example
+  Rsense: 0.075 Ohm
   
   TMCStepper library required:
   https://github.com/teemuatlut/TMCStepper
@@ -21,9 +22,10 @@
 #define MISO_PIN 12 //SDO/MISO (ICSP: 1, Uno: 12, Mega: 50)
 #define SCK_PIN  13 //CLK/SCK  (ICSP: 3, Uno: 13, Mega: 52)
 
-#define R_SENSE   0.075 //TMC5160: 0.075
+#define R_SENSE   0.075f //TMC5160: 0.075 Ohm
 
-TMC5160Stepper tmc = TMC5160Stepper(CS_PIN, R_SENSE, MOSI_PIN, MISO_PIN, SCK_PIN);
+TMC5160Stepper tmc = TMC5160Stepper(CS_PIN, R_SENSE); //use hardware SPI
+//TMC5160Stepper tmc = TMC5160Stepper(CS_PIN, R_SENSE, MOSI_PIN, MISO_PIN, SCK_PIN); //use software SPI
 
 void setup()
 {

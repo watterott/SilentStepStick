@@ -1,6 +1,7 @@
 /*
   SilentStepStick TMC2130 Example
-  
+  Rsense: 0.11 Ohm
+
   Other examples/libraries can be found here:
   https://github.com/teemuatlut/TMCStepper
   https://github.com/trinamic/TMC-API
@@ -103,7 +104,7 @@ void setup()
   //SPI.setDataMode(SPI_MODE3); //SPI Mode 3
   //SPI.setBitOrder(MSBFIRST); //MSB first
   //SPI.setClockDivider(SPI_CLOCK_DIV128); //clk=Fcpu/128
-  SPI.beginTransaction(SPISettings(1000000, MSBFIRST, SPI_MODE3));
+  SPI.beginTransaction(SPISettings(1000000UL, MSBFIRST, SPI_MODE3));
 
   //set TMC2130 config
   tmc_write(WRITE_FLAG|REG_GCONF,      0x00000001UL); //voltage on AIN is current reference

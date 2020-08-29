@@ -1,5 +1,6 @@
 /*
   SilentStepStick TMC2100 Example
+  Rsense: 0.11 Ohm
 
   Example source code free to use.
   Further information: https://learn.watterott.com/license/
