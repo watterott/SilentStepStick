@@ -398,7 +398,7 @@ function getRegisterByName(regName)
 			{
 				if(AllRegisters[i].bitName[n].name.toUpperCase() == regName)
 				{
-					return getSubBits(AllRegisters[i].bitName[n].value, AllRegisters[i].bitName[n].bit, AllRegisters[i].bitName[n].len);
+					return AllRegisters[i].bitName[n].value; //getSubBits(AllRegisters[i].bitName[n].value, AllRegisters[i].bitName[n].bit, AllRegisters[i].bitName[n].len);
 				}
 			}
 		}
