@@ -1506,7 +1506,7 @@ plotWindow.setWindowTitle("plot window created/used by script");
 plotWindow.setAxisLabels("x axis plot 1", "y axis plot 1");
 plotWindow.showLegend(true);
 plotWindow.setInitialAxisRanges(100, 0, 300);
-var plotWindowGraph1Index = plotWindow.addGraph("blue", "solid", "TSETP");
+var plotWindowGraph1Index = plotWindow.addGraph("blue", "solid", "TSTEP");
 plotWindow.showHelperElements(true, true, true, true, true, true, true);
 
 UI_RecordingShow_pushButton.clickedSignal.connect(TSTEP_showGraph);
