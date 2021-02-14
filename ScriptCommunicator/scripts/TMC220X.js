@@ -209,7 +209,7 @@ function dataReceivedSlot() {
 
     while (receivedData.length >= 4) {
         if ((receivedData[0] & 0x0f) == 0x05) {
-            if (receivedData[1] === 0) // echo datagram
+            if (receivedData[1] <= 3) // echo datagram, slaveAddr 0-3
             {
                 if (receivedData[2] & 0x80) // write request
                 {
@@ -250,7 +250,7 @@ function dataReceivedSlot() {
 }
 
 function readRegister(addr) {
-    var datagram = [0x05, 0x00, addr, 0x00];
+    var datagram = [0x05, 0x00, addr, 0x00]; //sync, slaveAddr, regAddr, crc
 
     datagram[3] = calcCRC(datagram, 3);
 
@@ -267,7 +267,7 @@ function readRegister(addr) {
 }
 
 function writeRegister(addr, value32) {
-    var datagram = [0x05, 0x00, (0x80 | addr), 0x00, 0x00, 0x00, 0x00, 0x00];
+    var datagram = [0x05, 0x00, (0x80 | addr), 0x00, 0x00, 0x00, 0x00, 0x00]; //sync, slaveAddr, write+regAddr, 4byte data, crc
 
     datagram[3] = (value32 >>> 24) & 0xff;
     datagram[4] = (value32 >>> 16) & 0xff;
