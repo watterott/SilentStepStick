@@ -43,10 +43,10 @@ uint8_t tmc_write(uint8_t cmd, uint32_t data)
   digitalWrite(CS_PIN, LOW);
 
   s = SPI.transfer(cmd);
-  SPI.transfer((data>>24UL)&0xFF)&0xFF;
-  SPI.transfer((data>>16UL)&0xFF)&0xFF;
-  SPI.transfer((data>> 8UL)&0xFF)&0xFF;
-  SPI.transfer((data>> 0UL)&0xFF)&0xFF;
+  SPI.transfer((data>>24UL)&0xFF);
+  SPI.transfer((data>>16UL)&0xFF);
+  SPI.transfer((data>> 8UL)&0xFF);
+  SPI.transfer((data>> 0UL)&0xFF);
 
   digitalWrite(CS_PIN, HIGH);
 
