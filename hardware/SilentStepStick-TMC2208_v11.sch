@@ -15291,9 +15291,9 @@ optional
 CLK (with pull-down)
 GND
 optional</text>
-<text x="38.1" y="55.88" size="1.778" layer="95" font="vector" ratio="10" align="top-left">100% - 1.77A RMS
- 50% - 0.88A RMS
- 20% - 0.35A RMS
+<text x="38.1" y="55.88" size="1.778" layer="95" font="vector" ratio="10" align="top-left">100% - 1.64A RMS
+ 50% - 0.82A RMS
+ 20% - 0.33A RMS
 
 
 driver enabled
